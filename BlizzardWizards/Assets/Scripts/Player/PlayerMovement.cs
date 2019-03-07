@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 3f;
-    public int jumpHeight = 150;
+    public float speed;
+    public int jumpHeight;
 
     private bool isGrounded;
     private bool jump;
@@ -27,6 +27,8 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        speed = 1f;
+        jumpHeight = 300;
         isGrounded = true;
     }
 
@@ -82,6 +84,16 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            speed = 3f;
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            speed = 1f;
         }
     }
 
