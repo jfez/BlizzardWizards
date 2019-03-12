@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [HideInInspector]
     public float speed;
+    [HideInInspector]
     public int jumpHeight;
 
     private bool isGrounded;
     private bool jump;
+    private float dashLimit;
+    private float dashTime;
+    //private float time;
+    private float dashForce;
     
 
     Vector3 movement;
-    Animator anim;
+    //Animator anim;
     Rigidbody playerRigidbody;
     int floorMask;
     float camRayLength = 100f;
 
     void Awake()
     {
-        anim = GetComponent<Animator>();
+        //anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
         floorMask = LayerMask.GetMask("Floor");
     }
@@ -27,9 +33,13 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 1f;
+        speed = 2f;
         jumpHeight = 300;
         isGrounded = true;
+        dashLimit = 3;
+        dashTime = dashLimit;
+        //time = 0;
+        dashForce = 400;
     }
 
     void FixedUpdate()
@@ -39,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
 
         Move(h, v);
         Turning();
-        Animating(h, v);
+        //Animating(h, v);
 
         if (jump && isGrounded)
         {
@@ -73,14 +83,16 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void Animating (float h, float v)
+    /*void Animating (float h, float v)
     {
         float forwardAmount = Mathf.Abs(h) + Mathf.Abs(v);
         anim.SetFloat("Forward", forwardAmount, 0.1f, Time.deltaTime);
-    }
+    }*/
 
     void Update()
     {
+        dashTime = dashTime + Time.deltaTime;
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump = true;
@@ -93,7 +105,13 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 1f;
+            speed = 2f;
+        }
+
+        if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit)
+        {
+            playerRigidbody.AddForce(transform.forward*dashForce);
+            dashTime = 0;
         }
     }
 
@@ -103,6 +121,12 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
         }
+
+        else if (other.gameObject.tag == "Respawn")
+        {
+            transform.position = new Vector3(0, 0, 0);
+            dashTime = dashLimit;
+        }
     }
 
     void OnCollisionExit(Collision other)
@@ -111,5 +135,7 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = false;
         }
+
+        
     }
 }
