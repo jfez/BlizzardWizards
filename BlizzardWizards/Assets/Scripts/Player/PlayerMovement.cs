@@ -9,17 +9,22 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector]
     public int jumpHeight;
 
+    public GameObject teleportPrefab;
+    public Transform teleportParticleSystemPoint;
+    public float teleportDistance = 3f;
+
     private bool isGrounded;
     private bool jump;
     private float dashLimit;
     private float dashTime;
     //private float time;
     private float dashForce;
-    
+
 
     Vector3 movement;
     //Animator anim;
     Rigidbody playerRigidbody;
+    ParticleSystem teleportParticles;
     int floorMask;
     float camRayLength = 100f;
 
@@ -28,6 +33,8 @@ public class PlayerMovement : MonoBehaviour
         //anim = GetComponent<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
         floorMask = LayerMask.GetMask("Floor");
+
+        teleportParticles = Instantiate(teleportPrefab).GetComponent<ParticleSystem>();
     }
 
     // Start is called before the first frame update
@@ -112,6 +119,37 @@ public class PlayerMovement : MonoBehaviour
         {
             playerRigidbody.AddForce(transform.forward*dashForce);
             dashTime = 0;
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Vector3 displacement = Vector3.zero;
+
+            if (Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
+            {
+                displacement.z = 1f;
+            }
+
+            if (Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.W))
+            {
+                displacement.z = -1f;
+            }
+
+            if (Input.GetKey(KeyCode.D) && !Input.GetKey(KeyCode.A))
+            {
+                displacement.x = 1f;
+            }
+
+            if (Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.D))
+            {
+                displacement.x = -1f;
+            }
+
+            displacement = displacement.normalized * teleportDistance;
+            teleportParticles.transform.position = teleportParticleSystemPoint.position;
+            teleportParticles.Play();
+
+            transform.position = transform.position + displacement;
         }
     }
 
