@@ -19,6 +19,8 @@ public class PlayerMovement : MonoBehaviour
     private float dashTime;
     //private float time;
     private float dashForce;
+    private float flashLimit;
+    private float flashTime;
 
 
     Vector3 movement;
@@ -45,6 +47,8 @@ public class PlayerMovement : MonoBehaviour
         isGrounded = true;
         dashLimit = 3;
         dashTime = dashLimit;
+        flashLimit = 3;
+        flashTime = flashLimit;
         //time = 0;
         dashForce = 400;
     }
@@ -99,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         dashTime = dashTime + Time.deltaTime;
+        flashTime = flashTime + Time.deltaTime;
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
@@ -121,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
             dashTime = 0;
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetKeyDown(KeyCode.F) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             Vector3 displacement = Vector3.zero;
 
@@ -150,6 +155,8 @@ public class PlayerMovement : MonoBehaviour
             teleportParticles.Play();
 
             transform.position = transform.position + displacement;
+
+            flashTime = 0;
         }
     }
 
