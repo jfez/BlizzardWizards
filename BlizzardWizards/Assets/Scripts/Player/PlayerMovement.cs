@@ -150,6 +150,8 @@ public class PlayerMovement : MonoBehaviour
                 displacement.x = -1f;
             }
 
+            if (displacement == Vector3.zero) return;
+
             displacement = displacement.normalized * teleportDistance;
             teleportParticles.transform.position = teleportParticleSystemPoint.position;
             teleportParticles.Play();
