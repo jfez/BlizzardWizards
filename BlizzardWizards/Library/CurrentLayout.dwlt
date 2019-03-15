@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 474}
   m_MaxSize: {x: 18008, y: 14024}
   vertical: 0
-  controlID: 2357
+  controlID: 1726
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 232, y: 474}
   m_MaxSize: {x: 10002, y: 14024}
   vertical: 1
-  controlID: 2413
+  controlID: 1782
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,10 +214,10 @@ MonoBehaviour:
     y: 0
     width: 1209
     height: 1307
-  m_MinSize: {x: 204, y: 348}
-  m_MaxSize: {x: 4004, y: 8048}
+  m_MinSize: {x: 204, y: 324}
+  m_MaxSize: {x: 4004, y: 8024}
   vertical: 1
-  controlID: 2303
+  controlID: 1727
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -293,10 +293,10 @@ MonoBehaviour:
     y: 0
     width: 737
     height: 1307
-  m_MinSize: {x: 277, y: 298}
-  m_MaxSize: {x: 4002, y: 8048}
+  m_MinSize: {x: 277, y: 274}
+  m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 2358
+  controlID: 1657
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -459,9 +459,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: e4060000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: daf9ffff
+      m_ExpandedIDs: d4fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -523,20 +523,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Player
+    - Assets/Western Props/Scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scripts/Player
+  - Assets/Western Props/Scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\usuario\Documents\GitHub\BlizzardWizards\BlizzardWizards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 04420000
-    m_LastClickedID: 16900
-    m_ExpandedIDs: 000000000e3400002835000064350000fa35000028370000f63800005a390000143c0000203c0000b43c0000183d0000103e0000c43e0000ae4000005e410000
+    m_SelectedIDs: 36160000
+    m_LastClickedID: 5686
+    m_ExpandedIDs: 000000004e0b00007e0c0000c00c0000600d00009a100000f210000008110000401400004c140000681600002a17000028190000ec190000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -564,7 +564,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: e2450000
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000000e3400002835000064350000fa35000028370000f63800005a390000143c0000203c0000b43c0000183d0000103e0000c43e0000ae4000005e410000
+    m_ExpandedIDs: 000000004e0b00007e0c0000c00c0000600d00009a100000f210000008110000401400004c140000681600002a17000028190000ec190000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -650,9 +650,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0.98, z: -0.029999971}
+    m_Target: {x: 0.522541, y: 0.42375553, z: -0.12711763}
     speed: 2
-    m_Value: {x: 0, y: 0.98, z: -0.029999971}
+    m_Value: {x: 0.522541, y: 0.42375553, z: -0.12711763}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -680,13 +680,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.079722784, y: -0.0071931933, z: 0.0005785771, w: -0.99679095}
+    m_Target: {x: -0.23654233, y: -0.005553456, z: 0.0013553727, w: -0.97160435}
     speed: 2
-    m_Value: {x: -0.079722784, y: -0.0071931933, z: 0.0005785771, w: -0.99679095}
+    m_Value: {x: -0.23654233, y: -0.005553456, z: 0.0013553727, w: -0.97160435}
   m_Size:
-    m_Target: 5.6014624
+    m_Target: 4.2366624
     speed: 2
-    m_Value: 5.6014624
+    m_Value: 4.2366624
   m_Ortho:
     m_Target: 0
     speed: 2
