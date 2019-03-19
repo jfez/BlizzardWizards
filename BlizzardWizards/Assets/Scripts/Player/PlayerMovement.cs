@@ -164,25 +164,30 @@ public class PlayerMovement : MonoBehaviour
 
     void OnCollisionEnter(Collision other)
     {
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Crate")
         {
             isGrounded = true;
+            Debug.Log("ENTRO");
         }
+
 
         else if (other.gameObject.tag == "Respawn")
         {
             transform.position = new Vector3(0, 0, 0);
             dashTime = dashLimit;
+            flashTime = flashLimit;
         }
     }
 
     void OnCollisionExit(Collision other)
     {
-        if (other.gameObject.tag == "Ground")
+        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Crate")
         {
             isGrounded = false;
+            Debug.Log("SALGO");
         }
 
         
+
     }
 }
