@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public GameObject teleportPrefab;
     public Transform teleportParticleSystemPoint;
     public float teleportDistance = 3f;
+    public float floorOverlapSphereRadius = 0.2f;
 
     private bool isGrounded;
     private bool jump;
@@ -61,6 +62,8 @@ public class PlayerMovement : MonoBehaviour
         Move(h, v);
         Turning();
         //Animating(h, v);
+
+        isGrounded = Physics.OverlapSphere(transform.position, floorOverlapSphereRadius, floorMask).Length != 0 ? true : false;
 
         if (jump && isGrounded)
         {
@@ -126,7 +129,7 @@ public class PlayerMovement : MonoBehaviour
             dashTime = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        if (Input.GetKeyDown(KeyCode.LeftControl) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             Vector3 displacement = Vector3.zero;
 
@@ -162,32 +165,13 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Crate")
+        if (collision.collider.CompareTag("Respawn"))
         {
-            isGrounded = true;
-            Debug.Log("ENTRO");
+            transform.position = Vector3.zero;
+            dashTime = 0f;
+            flashTime = 0f;
         }
-
-
-        else if (other.gameObject.tag == "Respawn")
-        {
-            transform.position = new Vector3(0, 0, 0);
-            dashTime = dashLimit;
-            flashTime = flashLimit;
-        }
-    }
-
-    void OnCollisionExit(Collision other)
-    {
-        if (other.gameObject.tag == "Ground" || other.gameObject.tag == "Crate")
-        {
-            isGrounded = false;
-            Debug.Log("SALGO");
-        }
-
-        
-
     }
 }
