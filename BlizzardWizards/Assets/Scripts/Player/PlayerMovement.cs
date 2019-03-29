@@ -43,14 +43,13 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 2f;
+        speed = 3f;
         jumpHeight = 300;
         isGrounded = true;
         dashLimit = 3;
         dashTime = dashLimit;
         flashLimit = 3;
         flashTime = flashLimit;
-        //time = 0;
         dashForce = 400;
     }
 
@@ -115,12 +114,12 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 3f;
+            speed = 4f;
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 2f;
+            speed = 3f;
         }
 
         if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit)
@@ -129,7 +128,7 @@ public class PlayerMovement : MonoBehaviour
             dashTime = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        if (Input.GetMouseButtonDown(2) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             Vector3 displacement = Vector3.zero;
 
@@ -170,8 +169,8 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.CompareTag("Respawn"))
         {
             transform.position = Vector3.zero;
-            dashTime = 0f;
-            flashTime = 0f;
+            dashTime = dashLimit;
+            flashTime = flashLimit;
         }
     }
 }
