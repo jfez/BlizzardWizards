@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: 48fab02379612604d99d088059ef2ea5
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BotaDch
+    100002: BotaIzq
+    100004: Cabet Final
+    100006: ExcusaTPDch
+    100008: ExcusaTPIzq
+    100010: //RootNode
+    100012: Pantalons
+    100014: Pit001
+    100016: Prota
+    100018: Prota Footsteps
+    100020: Prota Head
+    100022: Prota HeadNub
+    100024: Prota L Calf
+    100026: Prota L Clavicle
+    100028: Prota L Finger0
+    100030: Prota L Finger01
+    100032: Prota L Finger02
+    100034: Prota L Finger0Nub
+    100036: Prota L Finger1
+    100038: Prota L Finger11
+    100040: Prota L Finger12
+    100042: Prota L Finger1Nub
+    100044: Prota L Finger2
+    100046: Prota L Finger21
+    100048: Prota L Finger22
+    100050: Prota L Finger2Nub
+    100052: Prota L Finger3
+    100054: Prota L Finger31
+    100056: Prota L Finger32
+    100058: Prota L Finger3Nub
+    100060: Prota L Finger4
+    100062: Prota L Finger41
+    100064: Prota L Finger42
+    100066: Prota L Finger4Nub
+    100068: Prota L Foot
+    100070: Prota L Forearm
+    100072: Prota L Hand
+    100074: Prota L Thigh
+    100076: Prota L Toe0
+    100078: Prota L Toe0Nub
+    100080: Prota L UpperArm
+    100082: Prota Neck
+    100084: Prota Pelvis
+    100086: Prota Ponytail1
+    100088: Prota Ponytail11
+    100090: Prota Ponytail12
+    100092: Prota Ponytail1Nub
+    100094: Prota R Calf
+    100096: Prota R Clavicle
+    100098: Prota R Finger0
+    100100: Prota R Finger01
+    100102: Prota R Finger02
+    100104: Prota R Finger0Nub
+    100106: Prota R Finger1
+    100108: Prota R Finger11
+    100110: Prota R Finger12
+    100112: Prota R Finger1Nub
+    100114: Prota R Finger2
+    100116: Prota R Finger21
+    100118: Prota R Finger22
+    100120: Prota R Finger2Nub
+    100122: Prota R Finger3
+    100124: Prota R Finger31
+    100126: Prota R Finger32
+    100128: Prota R Finger3Nub
+    100130: Prota R Finger4
+    100132: Prota R Finger41
+    100134: Prota R Finger42
+    100136: Prota R Finger4Nub
+    100138: Prota R Foot
+    100140: Prota R Forearm
+    100142: Prota R Hand
+    100144: Prota R Thigh
+    100146: Prota R Toe0
+    100148: Prota R Toe0Nub
+    100150: Prota R UpperArm
+    100152: Prota Spine
+    100154: Prota Spine1
+    100156: Prota Spine2
+    400000: BotaDch
+    400002: BotaIzq
+    400004: Cabet Final
+    400006: ExcusaTPDch
+    400008: ExcusaTPIzq
+    400010: //RootNode
+    400012: Pantalons
+    400014: Pit001
+    400016: Prota
+    400018: Prota Footsteps
+    400020: Prota Head
+    400022: Prota HeadNub
+    400024: Prota L Calf
+    400026: Prota L Clavicle
+    400028: Prota L Finger0
+    400030: Prota L Finger01
+    400032: Prota L Finger02
+    400034: Prota L Finger0Nub
+    400036: Prota L Finger1
+    400038: Prota L Finger11
+    400040: Prota L Finger12
+    400042: Prota L Finger1Nub
+    400044: Prota L Finger2
+    400046: Prota L Finger21
+    400048: Prota L Finger22
+    400050: Prota L Finger2Nub
+    400052: Prota L Finger3
+    400054: Prota L Finger31
+    400056: Prota L Finger32
+    400058: Prota L Finger3Nub
+    400060: Prota L Finger4
+    400062: Prota L Finger41
+    400064: Prota L Finger42
+    400066: Prota L Finger4Nub
+    400068: Prota L Foot
+    400070: Prota L Forearm
+    400072: Prota L Hand
+    400074: Prota L Thigh
+    400076: Prota L Toe0
+    400078: Prota L Toe0Nub
+    400080: Prota L UpperArm
+    400082: Prota Neck
+    400084: Prota Pelvis
+    400086: Prota Ponytail1
+    400088: Prota Ponytail11
+    400090: Prota Ponytail12
+    400092: Prota Ponytail1Nub
+    400094: Prota R Calf
+    400096: Prota R Clavicle
+    400098: Prota R Finger0
+    400100: Prota R Finger01
+    400102: Prota R Finger02
+    400104: Prota R Finger0Nub
+    400106: Prota R Finger1
+    400108: Prota R Finger11
+    400110: Prota R Finger12
+    400112: Prota R Finger1Nub
+    400114: Prota R Finger2
+    400116: Prota R Finger21
+    400118: Prota R Finger22
+    400120: Prota R Finger2Nub
+    400122: Prota R Finger3
+    400124: Prota R Finger31
+    400126: Prota R Finger32
+    400128: Prota R Finger3Nub
+    400130: Prota R Finger4
+    400132: Prota R Finger41
+    400134: Prota R Finger42
+    400136: Prota R Finger4Nub
+    400138: Prota R Foot
+    400140: Prota R Forearm
+    400142: Prota R Hand
+    400144: Prota R Thigh
+    400146: Prota R Toe0
+    400148: Prota R Toe0Nub
+    400150: Prota R UpperArm
+    400152: Prota Spine
+    400154: Prota Spine1
+    400156: Prota Spine2
+    2100000: No Name
+    4300000: BotaDch
+    4300002: Pantalons
+    4300004: Pit001
+    4300006: BotaIzq
+    4300008: ExcusaTPDch
+    4300010: ExcusaTPIzq
+    4300012: Cabet Final
+    7400000: Idle
+    7400002: Run
+    7400004: Desliz
+    9500000: //RootNode
+    13700000: BotaDch
+    13700002: BotaIzq
+    13700004: Cabet Final
+    13700006: ExcusaTPDch
+    13700008: ExcusaTPIzq
+    13700010: Pantalons
+    13700012: Pit001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run
+      takeName: Take 001
+      firstFrame: 90
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Desliz
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 85
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
