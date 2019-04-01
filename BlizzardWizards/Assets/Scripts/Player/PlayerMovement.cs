@@ -22,20 +22,24 @@ public class PlayerMovement : MonoBehaviour
     private float dashForce;
     private float flashLimit;
     private float flashTime;
+    private bool isMoving;
+    private bool isRunning;
 
 
     Vector3 movement;
-    //Animator anim;
+    Animator anim;
     Rigidbody playerRigidbody;
     ParticleSystem teleportParticles;
-    int floorMask;
+    int floorMask; //para el apuntado
+    int groundMask;//para el salto
     float camRayLength = 100f;
 
     void Awake()
     {
-        //anim = GetComponent<Animator>();
+        anim = GetComponentInChildren<Animator>();
         playerRigidbody = GetComponent<Rigidbody>();
         floorMask = LayerMask.GetMask("Floor");
+        groundMask = LayerMask.GetMask("Ground");
 
         teleportParticles = Instantiate(teleportPrefab).GetComponent<ParticleSystem>();
     }
@@ -50,22 +54,28 @@ public class PlayerMovement : MonoBehaviour
         dashTime = dashLimit;
         flashLimit = 3;
         flashTime = flashLimit;
-        dashForce = 400;
+        dashForce = 200;
+        isMoving = false;
+        isRunning = false;
     }
 
     void FixedUpdate()
     {
-        float h = Input.GetAxis("Horizontal");
-        float v = Input.GetAxis("Vertical");
+        float h = Input.GetAxisRaw("Horizontal");   //Si lo cambiamos por GetAxis, parece que derrapa (se desliza)
+        float v = Input.GetAxisRaw("Vertical");
+
+        isMoving = Mathf.Abs(h) > 0 || Mathf.Abs(v) > 0;
+        anim.SetBool("moving", isMoving);
 
         Move(h, v);
         Turning();
         //Animating(h, v);
 
-        isGrounded = Physics.OverlapSphere(transform.position, floorOverlapSphereRadius, floorMask).Length != 0 ? true : false;
+        isGrounded = Physics.OverlapSphere(transform.position, floorOverlapSphereRadius, groundMask).Length != 0 ? true : false;
 
         if (jump && isGrounded)
         {
+            anim.SetTrigger("jump");
             jump = false;
             playerRigidbody.AddForce(Vector3.up * jumpHeight);
         }
@@ -107,6 +117,8 @@ public class PlayerMovement : MonoBehaviour
         dashTime = dashTime + Time.deltaTime;
         flashTime = flashTime + Time.deltaTime;
 
+        anim.SetBool("running", isRunning);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump = true;
@@ -115,11 +127,21 @@ public class PlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             speed = 4f;
+            if (!isRunning)
+            {
+                isRunning = true;
+            }
+            
         }
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
             speed = 3f;
+            if (isRunning)
+            {
+                isRunning = false;
+            }
+            
         }
 
         if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit)
