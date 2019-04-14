@@ -53,6 +53,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Assets Externos\Island\Scripts\CharacterMovement.cs" />
+     <Compile Include="Assets\Assets Externos\Island\Scripts\FixedTiling.cs" />
+     <Compile Include="Assets\Assets Externos\Island\Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Assets Externos\Island\Scripts\WaterScroller.cs" />
+     <Compile Include="Assets\Assets Externos\Western Props\Scripts\Destructible.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\SceneAndURLLoader.cs" />
@@ -62,8 +67,11 @@
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollows.cs" />
+     <Compile Include="Assets\Scripts\Player\CanvasFollow.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
-     <Compile Include="Assets\Western Props\Scripts\Destructible.cs" />
+     <None Include="Assets\LowPolyBuildings\readme.txt" />
+     <None Include="Assets\LowPolyBuildings\Standard Assets\Skyboxes\_skybox info.txt" />
+     <None Include="Assets\Assets Externos\Wand and Circles\Polygon City Free Pack - Environment and Interior\Materials\Double Sided Standard Diffuse Bump.shader" />
      <None Include="Assets\SampleScenes\Shaders\Skybox-Procedural.shader" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>C:/Users/PcCom/Documents/GitHub/BlizzardWizards/BlizzardWizards/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

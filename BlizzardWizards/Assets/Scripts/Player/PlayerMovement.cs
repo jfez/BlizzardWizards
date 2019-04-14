@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 3f;
+        speed = 9f;
         jumpHeight = 300;
         isGrounded = true;
         dashLimit = 3;
@@ -126,7 +126,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
-            speed = 4f;
+            speed = 15f;
             if (!isRunning)
             {
                 isRunning = true;
@@ -136,7 +136,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyUp(KeyCode.LeftShift))
         {
-            speed = 3f;
+            speed = 9f;
             if (isRunning)
             {
                 isRunning = false;
