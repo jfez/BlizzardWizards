@@ -1,0 +1,151 @@
+fileFormatVersion: 2
+guid: caa002c65363d3841b5b3c84090b98ba
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: bridge_002
+    100002: bridge_01_rope001
+    100004: field_02
+    100006: ground_05
+    100008: lighthouse
+    100010: //RootNode
+    100012: stone_01
+    100014: stone_02
+    100016: stone_03
+    100018: stone_04
+    400000: bridge_002
+    400002: bridge_01_rope001
+    400004: field_02
+    400006: ground_05
+    400008: lighthouse
+    400010: //RootNode
+    400012: stone_01
+    400014: stone_02
+    400016: stone_03
+    400018: stone_04
+    2100000: 'Material #5742'
+    2100002: 'Material #5766'
+    2100004: 'Material #5754'
+    2100006: ground _01
+    2100008: No Name
+    2100010: stone
+    2100012: stone_02
+    2100014: stone_03
+    2100016: stone_01
+    2100018: wood
+    2100020: override
+    2100022: 'Material #6244'
+    2100024: 'Material #6243'
+    2300000: bridge_002
+    2300002: bridge_01_rope001
+    2300004: field_02
+    2300006: ground_05
+    2300008: lighthouse
+    2300010: stone_01
+    2300012: stone_02
+    2300014: stone_03
+    2300016: stone_04
+    3300000: bridge_002
+    3300002: bridge_01_rope001
+    3300004: field_02
+    3300006: ground_05
+    3300008: lighthouse
+    3300010: stone_01
+    3300012: stone_02
+    3300014: stone_03
+    3300016: stone_04
+    4300000: lighthouse
+    4300002: ground_05
+    4300004: field_02
+    4300006: stone_03
+    4300008: bridge_002
+    4300010: bridge_01_rope001
+    4300012: stone_02
+    4300014: stone_04
+    4300016: stone_01
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
