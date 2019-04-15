@@ -3,6 +3,161 @@ guid: 1eac3025cf4dfaa4ebba698422540943
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
+    100000: //RootNode
+    100002: Barrel
+    100004: Brick 01
+    100006: Brick 02
+    100008: Bush
+    100010: Campfire
+    100012: Dead Tree
+    100014: Directions Sign Post
+    100016: Fence
+    100018: Floor
+    100020: Fox
+    100022: Grass
+    100024: Large Rock
+    100026: Log no axe
+    100028: Log Pile
+    100030: Log w/ axe
+    100032: Pine Tree
+    100034: RockWall
+    100036: Sign post
+    100038: Small Rock
+    100040: Snow Pine Tree
+    100042: 'Tent #1'
+    100044: 'Tent #2'
+    100046: Torch
+    100048: Tree 01
+    100050: Tree 02
+    100052: Tree 03
+    100054: Well
+    400000: //RootNode
+    400002: Barrel
+    400004: Brick 01
+    400006: Brick 02
+    400008: Bush
+    400010: Campfire
+    400012: Dead Tree
+    400014: Directions Sign Post
+    400016: Fence
+    400018: Floor
+    400020: Fox
+    400022: Grass
+    400024: Large Rock
+    400026: Log no axe
+    400028: Log Pile
+    400030: Log w/ axe
+    400032: Pine Tree
+    400034: RockWall
+    400036: Sign post
+    400038: Small Rock
+    400040: Snow Pine Tree
+    400042: 'Tent #1'
+    400044: 'Tent #2'
+    400046: Torch
+    400048: Tree 01
+    400050: Tree 02
+    400052: Tree 03
+    400054: Well
+    2100000: Wood
+    2100002: Stones
+    2100004: Barrel Wood
+    2100006: Water
+    2100008: Rope
+    2100010: No Name
+    2100012: Light Leaves
+    2100014: Dark Leaves
+    2100016: Metal
+    2100018: Snow
+    2100020: Wood Inside
+    2100022: Metal 2
+    2100024: Fox 1
+    2100026: 'Tent #1'
+    2100028: Black
+    2100030: 'Tent #2'
+    2300000: Barrel
+    2300002: Brick 01
+    2300004: Brick 02
+    2300006: Bush
+    2300008: Campfire
+    2300010: Dead Tree
+    2300012: Directions Sign Post
+    2300014: Fence
+    2300016: Floor
+    2300018: Fox
+    2300020: Grass
+    2300022: Large Rock
+    2300024: Log no axe
+    2300026: Log Pile
+    2300028: Log w/ axe
+    2300030: Pine Tree
+    2300032: RockWall
+    2300034: Sign post
+    2300036: Small Rock
+    2300038: Snow Pine Tree
+    2300040: 'Tent #1'
+    2300042: 'Tent #2'
+    2300044: Torch
+    2300046: Tree 01
+    2300048: Tree 02
+    2300050: Tree 03
+    2300052: Well
+    3300000: Barrel
+    3300002: Brick 01
+    3300004: Brick 02
+    3300006: Bush
+    3300008: Campfire
+    3300010: Dead Tree
+    3300012: Directions Sign Post
+    3300014: Fence
+    3300016: Floor
+    3300018: Fox
+    3300020: Grass
+    3300022: Large Rock
+    3300024: Log no axe
+    3300026: Log Pile
+    3300028: Log w/ axe
+    3300030: Pine Tree
+    3300032: RockWall
+    3300034: Sign post
+    3300036: Small Rock
+    3300038: Snow Pine Tree
+    3300040: 'Tent #1'
+    3300042: 'Tent #2'
+    3300044: Torch
+    3300046: Tree 01
+    3300048: Tree 02
+    3300050: Tree 03
+    3300052: Well
+    4300000: Dead Tree
+    4300002: Large Rock
+    4300004: Small Rock
+    4300006: Fence
+    4300008: Well
+    4300010: Floor
+    4300012: Tree 01
+    4300014: Tree 02
+    4300016: Tree 03
+    4300018: Pine Tree
+    4300020: Barrel
+    4300022: Snow Pine Tree
+    4300024: Bush
+    4300026: Log Pile
+    4300028: Log no axe
+    4300030: Log w/ axe
+    4300032: Campfire
+    4300034: Fox
+    4300036: Grass
+    4300038: Torch
+    4300040: RockWall
+    4300042: Brick 01
+    4300044: Brick 02
+    4300046: Directions Sign Post
+    4300048: Sign post
+    4300050: 'Tent #2'
+    4300052: 'Tent #1'
+    7400000: Take 001
+    9500000: //RootNode
     2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
@@ -57,7 +212,7 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
     previousCalculatedGlobalScale: 1
-    hasPreviousCalculatedGlobalScale: 0
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
