@@ -47,6 +47,14 @@ ModelImporter:
     4300010: object6
     4300012: object7
     4300014: object8
+    6400000: object1
+    6400002: object2
+    6400004: object3
+    6400006: object4
+    6400008: object5
+    6400010: object6
+    6400012: object7
+    6400014: object8
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -80,7 +88,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1

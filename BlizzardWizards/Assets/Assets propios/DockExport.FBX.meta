@@ -51,6 +51,13 @@ ModelImporter:
     4300008: Props_02
     4300010: Support
     4300012: Wooden_Base
+    6400000: Prop_01
+    6400002: Props._03
+    6400004: Props._04
+    6400006: Props._05
+    6400008: Props_02
+    6400010: Support
+    6400012: Wooden_Base
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -84,7 +91,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
