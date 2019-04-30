@@ -58,7 +58,6 @@
      <Compile Include="Assets\Assets Externos\Island\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Assets Externos\Island\Scripts\WaterScroller.cs" />
      <Compile Include="Assets\Assets Externos\Western Props\Scripts\Destructible.cs" />
-     <Compile Include="Assets\levantamiento.cs" />
      <Compile Include="Assets\POLY STYLE - Vegetation Pack\Script\TakeScreenshot.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
      <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
@@ -69,6 +68,8 @@
      <Compile Include="Assets\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\SampleScenes\Scripts\SlowMoButton.cs" />
      <Compile Include="Assets\Scripts\Camera\CameraFollows.cs" />
+     <Compile Include="Assets\Scripts\EnemyFollows.cs" />
+     <Compile Include="Assets\Scripts\levantamiento.cs" />
      <Compile Include="Assets\Scripts\Player\CanvasFollow.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <None Include="Assets\Flooded_Grounds\Content\Shaders\FG_PBR_Water.shader" />
