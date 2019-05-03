@@ -40,7 +40,7 @@ public class EnemyFollows : MonoBehaviour
             moving = true;
         }
 
-        nav.SetDestination(player.transform.position);
+        if (nav.enabled) nav.SetDestination(player.transform.position);
         anim.SetBool("IsMoving", moving);
 
 
@@ -62,5 +62,21 @@ public class EnemyFollows : MonoBehaviour
         }*/
 
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            nav.enabled = false;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject == player)
+        {
+            nav.enabled = true;
+        }
     }
 }
