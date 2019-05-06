@@ -15,10 +15,14 @@ public class ZombieHealth : MonoBehaviour
     bool isDead;
     bool isSinking;
 
+    Animator anim;
+
     private void Awake()
     {
         currentHealth = startingHealth;
         capsuleCollider = GetComponent<CapsuleCollider>();
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -43,6 +47,9 @@ public class ZombieHealth : MonoBehaviour
 
     void Death() {
         isDead = true;
+        anim.SetTrigger("Death");
+        ScoreManager.zombiesCounter--;
+        gameObject.layer = LayerMask.NameToLayer("Default");
         capsuleCollider.isTrigger = true;
         StartSinking();
     }

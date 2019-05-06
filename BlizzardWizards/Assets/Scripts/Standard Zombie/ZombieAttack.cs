@@ -13,10 +13,17 @@ public class ZombieAttack : MonoBehaviour
     bool playerInRange;
     float timer;
 
+    Animator anim;
+
+    private bool attacking;
+
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
+
+        anim = GetComponent<Animator>();
+        attacking = false;
     }
 
     private void Update()
@@ -26,10 +33,20 @@ public class ZombieAttack : MonoBehaviour
         if (timer >= timeBetweenAttacks && playerInRange) {
             Attack();
         }
+
+        if (attacking && timer >= 0.5)
+        {
+            attacking = false;
+            anim.SetBool("Attacking", attacking);
+        }
     }
 
     private void Attack() {
         timer = 0f;
+
+        attacking = true;
+        anim.SetBool("Attacking", attacking);
+        
 
         if (playerHealth.currentHealth > 0) {
             playerHealth.TakeDamage(attackDamage);
