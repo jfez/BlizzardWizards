@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerShooting : MonoBehaviour
 {
+    public GameObject bulletPrefab;
+
     public int damagePerShot = 20;
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
@@ -28,6 +30,10 @@ public class PlayerShooting : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
+
+        if (Input.GetKeyDown(KeyCode.Q)) {
+            Instantiate(bulletPrefab, transform.position, transform.rotation);
+        }
 
         if (Input.GetButton("Fire1") && timer >= timeBetweenBullets) {
             Shoot();
