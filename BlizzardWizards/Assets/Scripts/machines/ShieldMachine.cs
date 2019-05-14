@@ -28,23 +28,21 @@ public class ShieldMachine : MonoBehaviour
         }
     }
 
-    
 
-    private void OnCollisionEnter(Collision col)
+
+    private void OnTriggerEnter(Collider other)
     {
-        if (col.gameObject == player)
+        if (other.gameObject == player)
         {
             inMachine = true;
-            
         }
     }
 
-    void OnCollisionExit(Collision col)
+    private void OnTriggerExit(Collider other)
     {
-        if (col.gameObject == player)
+        if (other.gameObject == player)
         {
             inMachine = false;
-            
         }
     }
 

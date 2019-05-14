@@ -9,6 +9,7 @@ public class ZombieAttack : MonoBehaviour
 
     GameObject player;
     PlayerHealth playerHealth;
+    ZombieHealth zombieHealth;
 
     bool playerInRange;
     float timer;
@@ -21,6 +22,7 @@ public class ZombieAttack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         playerHealth = player.GetComponent<PlayerHealth>();
+        zombieHealth = GetComponent<ZombieHealth>();
 
         anim = GetComponent<Animator>();
         attacking = false;
@@ -30,7 +32,7 @@ public class ZombieAttack : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        if (timer >= timeBetweenAttacks && playerInRange) {
+        if (timer >= timeBetweenAttacks && playerInRange && zombieHealth.currentHealth > 0) {
             Attack();
         }
 

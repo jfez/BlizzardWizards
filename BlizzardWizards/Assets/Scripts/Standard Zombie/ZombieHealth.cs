@@ -16,11 +16,13 @@ public class ZombieHealth : MonoBehaviour
     bool isSinking;
 
     Animator anim;
+    private EnemyFollows enemyFollows;
 
     private void Awake()
     {
         currentHealth = startingHealth;
         capsuleCollider = GetComponent<CapsuleCollider>();
+        enemyFollows = GetComponent<EnemyFollows>();
 
         anim = GetComponent<Animator>();
     }
@@ -46,17 +48,21 @@ public class ZombieHealth : MonoBehaviour
     }
 
     void Death() {
+        ScoreManager.score += 10;
         isDead = true;
+        //Destroy(GetComponent<Rigidbody>());
         anim.SetTrigger("Death");
         ScoreManager.zombiesCounter--;
         gameObject.layer = LayerMask.NameToLayer("Default");
         capsuleCollider.isTrigger = true;
+        //capsuleCollider.enabled = false;
         StartSinking();
     }
 
     void StartSinking() {
         GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
-        GetComponent<Rigidbody>().isKinematic = true;
+        //GetComponent<Rigidbody>().isKinematic = false;
+        
 
         isSinking = true;
 
