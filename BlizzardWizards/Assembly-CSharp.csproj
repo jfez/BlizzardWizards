@@ -125,6 +125,10 @@
     <Compile Include="Assets\Scripts\Environment\openDoor.cs" />
     <Compile Include="Assets\Scripts\Environment\ZombieSpawner.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Guns\MachinegunShot.cs" />
+    <Compile Include="Assets\Scripts\Guns\Pellet.cs" />
+    <Compile Include="Assets\Scripts\Guns\PistolShot.cs" />
+    <Compile Include="Assets\Scripts\Guns\ShotgunShot.cs" />
     <Compile Include="Assets\Scripts\Guns\StandardBullet.cs" />
     <Compile Include="Assets\Scripts\HUD\ScoreManager.cs" />
     <Compile Include="Assets\Scripts\machines\ShieldMachine.cs" />
