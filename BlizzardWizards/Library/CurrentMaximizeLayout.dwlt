@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1307
-  m_MinSize: {x: 683, y: 498}
+  m_MinSize: {x: 681, y: 498}
   m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
-  controlID: 5187
+  controlID: 925
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -126,10 +126,10 @@ MonoBehaviour:
     y: 0
     width: 1775
     height: 1307
-  m_MinSize: {x: 406, y: 498}
+  m_MinSize: {x: 404, y: 498}
   m_MaxSize: {x: 14006, y: 14048}
   vertical: 1
-  controlID: 5188
+  controlID: 926
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -151,10 +151,10 @@ MonoBehaviour:
     y: 0
     width: 1775
     height: 789
-  m_MinSize: {x: 406, y: 224}
-  m_MaxSize: {x: 8006, y: 4024}
+  m_MinSize: {x: 404, y: 224}
+  m_MaxSize: {x: 8004, y: 4024}
   vertical: 0
-  controlID: 5159
+  controlID: 882
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -174,8 +174,8 @@ MonoBehaviour:
     y: 0
     width: 440
     height: 789
-  m_MinSize: {x: 202, y: 224}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -212,7 +212,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: ae32ffffe8cf0000
+      m_ExpandedIDs: b0fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -475,7 +475,7 @@ MonoBehaviour:
   m_MinSize: {x: 336, y: 274}
   m_MaxSize: {x: 14006, y: 10024}
   vertical: 0
-  controlID: 5189
+  controlID: 927
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -495,8 +495,8 @@ MonoBehaviour:
     y: 0
     width: 1184
     height: 518
-  m_MinSize: {x: 232, y: 274}
-  m_MaxSize: {x: 10002, y: 10024}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -540,20 +540,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts/Enemies
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts/Enemies
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\usuario\Documents\GitHub\BlizzardWizards\BlizzardWizards
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: cc7d0000
-    m_LastClickedID: 32204
-    m_ExpandedIDs: 000000002a740000367500005a760000fc7a0000e47c0000ee7c0000d67e0000447f00004880000046850000348600004a880000de8f0000569000009e9100006e94000080980000e69800000a9900001c9c0000b89c0000029e000068a20000b0a40000d8a400004ea5000016a8000066ab00007aab000018ac000060ad0000a2ae0000eefd0000f0fd0000f2fd0000f4fd0000f6fd0000
+    m_SelectedIDs: 54560000
+    m_LastClickedID: 22100
+    m_ExpandedIDs: 00000000ca2d0000062f0000603000001c35000006370000103700003c390000c0390000303b00009a400000964100000a440000e64c0000864d0000e84e0000ee51000054560000bc560000e2560000525a0000225b00008a5c00006e610000f063000028640000a0640000bc6700008e6b0000a86b0000546c0000ae6d0000086f000092c2000094c2000096c2000098c200009ac20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -581,7 +581,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000002a740000367500005a760000fc7a0000e47c0000ee7c0000d67e0000447f00004880000046850000348600004a880000de8f0000569000009e9100006e94000080980000e69800000a9900001c9c0000b89c0000029e000068a20000b0a40000d8a400004ea5000016a8000066ab00007aab000018ac000060ad0000a2ae0000eefd0000f0fd0000f2fd0000f4fd0000f6fd0000
+    m_ExpandedIDs: 00000000ca2d0000062f0000603000001c35000006370000103700003c390000c0390000303b00009a400000964100000a440000e64c0000864d0000e84e0000ee51000054560000bc560000e2560000525a0000225b00008a5c00006e610000f063000028640000a0640000bc6700008e6b0000a86b0000546c0000ae6d0000086f000092c2000094c2000096c2000098c200009ac20000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -606,8 +606,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 38c70000
-    m_LastClickedInstanceID: 51000
+    m_SelectedInstanceIDs: 
+    m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300005e3c1700388a010086d8180098af0000aa081900
     m_RenameOverlay:
@@ -712,7 +712,7 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 274}
   m_MaxSize: {x: 4002, y: 8024}
   vertical: 1
-  controlID: 5059
+  controlID: 837
 --- !u!114 &17
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -732,8 +732,8 @@ MonoBehaviour:
     y: 0
     width: 785
     height: 708
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}

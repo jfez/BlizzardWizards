@@ -29,8 +29,15 @@ public class GameManager : MonoBehaviour
     private float delaySpawn = 2f;
 
     public void newRound() {
+        StartCoroutine(delayNewRound());
+    }
+
+    IEnumerator delayNewRound()
+    {
+        yield return new WaitForSeconds(3f);
         round++;
         ScoreManager.changeRound();
+        yield return new WaitForSeconds(5f);
         zombiesPerRound += 5;
         zombiesSpawnedInRound = 0;
         zombiesDeadInRound = 0;

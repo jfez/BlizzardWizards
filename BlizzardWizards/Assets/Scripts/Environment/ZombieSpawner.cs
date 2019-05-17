@@ -34,7 +34,7 @@ public class ZombieSpawner : MonoBehaviour
 
                 timer = 0f;
 
-                Transform point = spawnPoints[Random.Range(0, spawnPoints.Length)];
+                Transform point = spawnPoints[Random.Range(1, spawnPoints.Length)];
                 Instantiate(standardZombie, point.position, point.rotation);
                 gameManager.amountZombies++;
                 gameManager.zombiesSpawnedInRound++;

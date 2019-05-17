@@ -72,8 +72,9 @@ public class ZombieHealth : MonoBehaviour
         Destroy(gameObject, 2f);
 
         gameManager.amountZombies--;
+        gameManager.zombiesDeadInRound++;
 
-        if (++gameManager.zombiesDeadInRound == gameManager.zombiesPerRound)
+        if (gameManager.zombiesDeadInRound == gameManager.zombiesPerRound)
         {
             gameManager.newRound();
         }
