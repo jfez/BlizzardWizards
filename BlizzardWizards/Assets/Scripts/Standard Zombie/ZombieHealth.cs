@@ -16,7 +16,9 @@ public class ZombieHealth : MonoBehaviour
     bool isSinking;
 
     Animator anim;
-    private EnemyFollows enemyFollows;
+    EnemyFollows enemyFollows;
+
+    GameManager gameManager;
 
     private void Awake()
     {
@@ -25,6 +27,7 @@ public class ZombieHealth : MonoBehaviour
         enemyFollows = GetComponent<EnemyFollows>();
 
         anim = GetComponent<Animator>();
+        gameManager = GameManager.instance;
     }
 
     // Update is called once per frame
@@ -60,12 +63,19 @@ public class ZombieHealth : MonoBehaviour
     }
 
     void StartSinking() {
+
         GetComponent<UnityEngine.AI.NavMeshAgent>().enabled = false;
         //GetComponent<Rigidbody>().isKinematic = false;
-        
 
         isSinking = true;
 
         Destroy(gameObject, 2f);
+
+        gameManager.amountZombies--;
+
+        if (++gameManager.zombiesDeadInRound == gameManager.zombiesPerRound)
+        {
+            gameManager.newRound();
+        }
     }
 }
