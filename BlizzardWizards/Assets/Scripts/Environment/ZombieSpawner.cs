@@ -21,6 +21,7 @@ public class ZombieSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (gameManager == null) gameManager = GameManager.instance;
         spawnPoints = GetComponentsInChildren<Transform>();
     }
 
@@ -41,6 +42,7 @@ public class ZombieSpawner : MonoBehaviour
 
             }
         }
+
     }
 
     void OnTriggerEnter(Collider other)
