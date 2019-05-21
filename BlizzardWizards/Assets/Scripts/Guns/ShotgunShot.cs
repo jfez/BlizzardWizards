@@ -10,7 +10,13 @@ public class ShotgunShot : MonoBehaviour
     public float timeBetweenShots = 0.5f;
 
     float timer;
+    AudioSource zasca;
 
+    void Awake()
+    {
+        zasca = GetComponent<AudioSource>();
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -18,6 +24,7 @@ public class ShotgunShot : MonoBehaviour
 
         if (Input.GetButton("Fire1") && timer >= timeBetweenShots) {
             timer = 0f;
+            zasca.Play();
 
             for (int i = 0; i < numPellets; i++) {
                 Instantiate(pelletPrefab, transform.position, transform.rotation);

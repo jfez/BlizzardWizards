@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     [HideInInspector]
     public int jumpHeight;
+    [HideInInspector]
+    public bool speedPerk;
 
     public GameObject teleportPrefab;
     public Transform teleportParticleSystemPoint;
@@ -47,7 +49,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        speed = 9f;
+        speed = 6f;
         jumpHeight = 300;
         isGrounded = true;
         dashLimit = 3;
@@ -57,6 +59,9 @@ public class PlayerMovement : MonoBehaviour
         dashForce = 200;
         isMoving = false;
         isRunning = false;
+        speedPerk = false;
+
+
     }
 
     void FixedUpdate()
@@ -124,25 +129,53 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+
+        if (!speedPerk)
         {
-            speed = 15f;
-            if (!isRunning)
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                isRunning = true;
+                speed = 9f;
+                if (!isRunning)
+                {
+                    isRunning = true;
+                }
+
             }
-            
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 6f;
+                if (isRunning)
+                {
+                    isRunning = false;
+                }
+
+            }
         }
 
-        if (Input.GetKeyUp(KeyCode.LeftShift))
+        else
         {
-            speed = 9f;
-            if (isRunning)
+            if (Input.GetKeyDown(KeyCode.LeftShift))
             {
-                isRunning = false;
+                speed = 13f;
+                if (!isRunning)
+                {
+                    isRunning = true;
+                }
+
             }
-            
+
+            if (Input.GetKeyUp(KeyCode.LeftShift))
+            {
+                speed = 10f;
+                if (isRunning)
+                {
+                    isRunning = false;
+                }
+
+            }
         }
+        
 
         if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit)
         {

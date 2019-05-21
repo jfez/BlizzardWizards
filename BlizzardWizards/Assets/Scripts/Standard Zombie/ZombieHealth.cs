@@ -7,6 +7,7 @@ public class ZombieHealth : MonoBehaviour
     public int startingHealth = 40;
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
+    public AudioSource hurt_zombie;
 
     [HideInInspector]
     public int currentHealth;
@@ -44,6 +45,7 @@ public class ZombieHealth : MonoBehaviour
         }
 
         currentHealth -= amount;
+        hurt_zombie.Play();
 
         if (currentHealth <= 0) {
             Death();

@@ -11,6 +11,11 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;
     public Slider shieldSlider;
     public Image damageImage;
+    public AudioSource hurt_pj;
+
+    public GameObject pistol;
+    public GameObject machineGun;
+    public GameObject gunShot;
 
     public float flashSpeed = 5f;
     public Color flashColour = new Color(1f, 0f, 0f, 0.1f);
@@ -30,6 +35,7 @@ public class PlayerHealth : MonoBehaviour
 
     PlayerMovement playerMovement;
     PlayerShooting playerShooting;
+    changeGun change;
 
     private float timerRestart;
 
@@ -43,6 +49,8 @@ public class PlayerHealth : MonoBehaviour
         playerShooting = GetComponentInChildren<PlayerShooting>();
 
         timerRestart = 0;
+
+        change = GetComponent<changeGun>();
 
     }
 
@@ -75,6 +83,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage(int amount)
     {
+        hurt_pj.Play();
         damaged = true;
         if (currentShield > amount)
         {
@@ -102,7 +111,11 @@ public class PlayerHealth : MonoBehaviour
         anim.SetTrigger("death");
 
         playerMovement.enabled = false;
-        playerShooting.enabled = false;
+        //playerShooting.enabled = false;
+        pistol.SetActive(false);
+        machineGun.SetActive(false);
+        gunShot.SetActive(false);
+        change.enabled = false;
     }
 
     public void RestartLevel()

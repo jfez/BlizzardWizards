@@ -7,6 +7,7 @@ public class changeGun : MonoBehaviour
     public GameObject pistol;
     public GameObject machineGun;
     public GameObject shotGun;
+    public AudioSource change;
 
     private bool pistoleActive;
     private bool machineGunActive;
@@ -14,6 +15,7 @@ public class changeGun : MonoBehaviour
 
     private int indexGun;
     private int numberGuns = 3;
+    
     
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,8 @@ public class changeGun : MonoBehaviour
         shotGunActive = false;
 
         indexGun = 1;
+
+        //change = GetComponent<AudioSource>();
 
     }
 
@@ -48,6 +52,8 @@ public class changeGun : MonoBehaviour
             shotGunActive = false;
 
             indexGun = 1;
+
+            change.Play();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha2) && !machineGunActive)
@@ -62,6 +68,8 @@ public class changeGun : MonoBehaviour
             shotGunActive = false;
 
             indexGun = 2;
+
+            change.Play();
         }
 
         else if (Input.GetKeyDown(KeyCode.Alpha3) && !shotGunActive)
@@ -76,6 +84,8 @@ public class changeGun : MonoBehaviour
             shotGunActive = true;
 
             indexGun = 3;
+
+            change.Play();
         }
 
         if (Input.mouseScrollDelta.y > 0 && indexGun < numberGuns)
@@ -92,6 +102,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(false);
                 shotGunActive = false;
+
+                change.Play();
             }
 
             else if (indexGun == 2)
@@ -104,6 +116,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(false);
                 shotGunActive = false;
+
+                change.Play();
             }
 
             else if (indexGun == 3)
@@ -116,6 +130,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(true);
                 shotGunActive = true;
+
+                change.Play();
             }
         }
 
@@ -133,6 +149,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(false);
                 shotGunActive = false;
+
+                change.Play();
             }
 
             else if (indexGun == 2)
@@ -145,6 +163,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(false);
                 shotGunActive = false;
+
+                change.Play();
             }
 
             else if (indexGun == 3)
@@ -157,6 +177,8 @@ public class changeGun : MonoBehaviour
 
                 shotGun.SetActive(true);
                 shotGunActive = true;
+
+                change.Play();
             }
         }
 

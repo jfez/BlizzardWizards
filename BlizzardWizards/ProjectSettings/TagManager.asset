@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Crate
   - Zombie
+  - Surface
   layers:
   - Default
   - TransparentFX

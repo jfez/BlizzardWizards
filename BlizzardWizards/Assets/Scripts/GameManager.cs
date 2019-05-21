@@ -28,6 +28,13 @@ public class GameManager : MonoBehaviour
     private float delayRound = 2f;
     private float delaySpawn = 2f;
 
+    private AudioSource changeRound;
+
+    void Start()
+    {
+        changeRound = GetComponent<AudioSource>();
+    }
+
     public void newRound() {
         StartCoroutine(delayNewRound());
     }
@@ -37,6 +44,7 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         round++;
         ScoreManager.changeRound();
+        changeRound.Play();
         yield return new WaitForSeconds(5f);
         zombiesPerRound += 5;
         zombiesSpawnedInRound = 0;

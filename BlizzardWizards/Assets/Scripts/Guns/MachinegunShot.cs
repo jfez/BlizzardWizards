@@ -14,7 +14,13 @@ public class MachinegunShot : MonoBehaviour
 
     float timer;
     bool burst;
+    AudioSource pium;
 
+    void Awake()
+    {
+        pium = GetComponent<AudioSource>();
+    }
+    
     // Update is called once per frame
     void Update()
     {
@@ -33,6 +39,7 @@ public class MachinegunShot : MonoBehaviour
             }
             else if (!burst && timer >= timeBetweenBullets)
             {
+                pium.Play();
                 Instantiate(bulletPrefab, transform.position, transform.rotation);
                 timer = 0f;
             }
@@ -41,6 +48,7 @@ public class MachinegunShot : MonoBehaviour
 
     IEnumerator burstShoot()
     {
+        pium.Play();
         timer = 0f;
         Instantiate(bulletPrefab, transform.position, transform.rotation);
         yield return new WaitForSeconds(timeBetweenBurstBullets);
