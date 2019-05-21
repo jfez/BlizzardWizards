@@ -1,0 +1,687 @@
+fileFormatVersion: 2
+guid: 14d21e305f243d148a860aaa3d79204b
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BotaDch
+    100002: Cabet Final
+    100004: ExhaustRunning1
+    100006: Head
+    100008: Head_end
+    100010: Head_end_end
+    100012: Head_end_end_end
+    100014: Hips
+    100016: LeftArm
+    100018: LeftFoot
+    100020: LeftForeArm
+    100022: LeftHand
+    100024: LeftHand_end
+    100026: LeftHand_end_end
+    100028: LeftHand_end_end_end
+    100030: LeftLeg
+    100032: LeftShoulder
+    100034: LeftToeBase
+    100036: LeftToeBase_end
+    100038: LeftToeBase_end_end
+    100040: LeftToeBase_end_end_end
+    100042: LeftUpLeg
+    100044: Neck
+    100046: Pantalons
+    100048: Pit001
+    100050: //RootNode
+    100052: RightArm
+    100054: RightFoot
+    100056: RightForeArm
+    100058: RightHand
+    100060: RightHand_end
+    100062: RightHand_end_end
+    100064: RightHand_end_end_end
+    100066: RightLeg
+    100068: RightShoulder
+    100070: RightToeBase
+    100072: RightToeBase_end
+    100074: RightToeBase_end_end
+    100076: RightToeBase_end_end_end
+    100078: RightUpLeg
+    100080: Spine
+    100082: Spine1
+    400000: BotaDch
+    400002: Cabet Final
+    400004: ExhaustRunning1
+    400006: Head
+    400008: Head_end
+    400010: Head_end_end
+    400012: Head_end_end_end
+    400014: Hips
+    400016: LeftArm
+    400018: LeftFoot
+    400020: LeftForeArm
+    400022: LeftHand
+    400024: LeftHand_end
+    400026: LeftHand_end_end
+    400028: LeftHand_end_end_end
+    400030: LeftLeg
+    400032: LeftShoulder
+    400034: LeftToeBase
+    400036: LeftToeBase_end
+    400038: LeftToeBase_end_end
+    400040: LeftToeBase_end_end_end
+    400042: LeftUpLeg
+    400044: Neck
+    400046: Pantalons
+    400048: Pit001
+    400050: //RootNode
+    400052: RightArm
+    400054: RightFoot
+    400056: RightForeArm
+    400058: RightHand
+    400060: RightHand_end
+    400062: RightHand_end_end
+    400064: RightHand_end_end_end
+    400066: RightLeg
+    400068: RightShoulder
+    400070: RightToeBase
+    400072: RightToeBase_end
+    400074: RightToeBase_end_end
+    400076: RightToeBase_end_end_end
+    400078: RightUpLeg
+    400080: Spine
+    400082: Spine1
+    2100000: 'Material #21'
+    2100002: 'Material #31'
+    2100004: 'Material #27'
+    2100006: 'Material #26'
+    2100008: 'Material #23'
+    2100010: 'Material #28'
+    2100012: 'Material #29'
+    2100014: 'Material #25'
+    2100016: 'Material #30'
+    2100018: 'Material #24'
+    4300000: BotaDch
+    4300002: Cabet Final
+    4300004: Pantalons
+    4300006: Pit001
+    7400000: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.000
+    7400002: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.001
+    7400004: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.002
+    7400006: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.003
+    7400008: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.004
+    7400010: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.005
+    7400012: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.006
+    7400014: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.007
+    7400016: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.008
+    7400018: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.009
+    7400020: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.010
+    7400022: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.011
+    7400024: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.012
+    7400026: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.013
+    7400028: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.014
+    7400030: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.015
+    7400032: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1
+    9500000: //RootNode
+    13700000: BotaDch
+    13700002: Cabet Final
+    13700004: Pantalons
+    13700006: Pit001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.000
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.000
+      firstFrame: 0
+      lastFrame: 377
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.001
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.001
+      firstFrame: 0
+      lastFrame: 408
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.002
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.002
+      firstFrame: 0
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.003
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.003
+      firstFrame: 0
+      lastFrame: 246
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.004
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.004
+      firstFrame: 0
+      lastFrame: 377
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.005
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.005
+      firstFrame: 0
+      lastFrame: 408
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.006
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.006
+      firstFrame: 0
+      lastFrame: 377
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.007
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.007
+      firstFrame: 0
+      lastFrame: 362
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.008
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.008
+      firstFrame: 0
+      lastFrame: 408
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.009
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.009
+      firstFrame: 0
+      lastFrame: 935
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.010
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.010
+      firstFrame: 0
+      lastFrame: 339
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.011
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.011
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.012
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.012
+      firstFrame: 0
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.013
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.013
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.014
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.014
+      firstFrame: 0
+      lastFrame: 320
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.015
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunn.015
+      firstFrame: 0
+      lastFrame: 250
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1
+      takeName: ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1|ExhaustRunning1
+      firstFrame: 50
+      lastFrame: 259
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

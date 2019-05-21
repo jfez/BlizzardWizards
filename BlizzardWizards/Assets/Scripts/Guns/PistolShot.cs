@@ -8,6 +8,7 @@ public class PistolShot : MonoBehaviour
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
 
+
     float timer;
     Ray shootRay;
     RaycastHit shootHit;
@@ -15,6 +16,7 @@ public class PistolShot : MonoBehaviour
     LineRenderer gunLine;
     Light gunLight;
     float effectsDisplayTime = 0.2f;
+    AudioSource beep;
 
     private void Awake()
     {
@@ -22,6 +24,8 @@ public class PistolShot : MonoBehaviour
 
         gunLine = GetComponent<LineRenderer>();
         gunLight = GetComponent<Light>();
+
+        beep = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -48,6 +52,7 @@ public class PistolShot : MonoBehaviour
 
     void Shoot()
     {
+        beep.Play();
         timer = 0f;
         gunLight.enabled = true;
         gunLine.enabled = true;

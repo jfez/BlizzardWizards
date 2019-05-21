@@ -1,0 +1,210 @@
+fileFormatVersion: 2
+guid: 8f215a759e8480f46a59923736187df2
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BigZombieRunning5
+    100002: Camera
+    100004: Faldeta
+    100006: GorillA
+    100008: //RootNode
+    100010: Head
+    100012: Head_end
+    100014: Hips
+    100016: Lamp
+    100018: LeftArm
+    100020: LeftFoot
+    100022: LeftForeArm
+    100024: LeftHand
+    100026: LeftHand_end
+    100028: LeftLeg
+    100030: LeftShoulder
+    100032: LeftToeBase
+    100034: LeftToeBase_end
+    100036: LeftUpLeg
+    100038: Neck
+    100040: Pit
+    100042: RightArm
+    100044: RightFoot
+    100046: RightForeArm
+    100048: RightHand
+    100050: RightHand_end
+    100052: RightLeg
+    100054: RightShoulder
+    100056: RightToeBase
+    100058: RightToeBase_end
+    100060: RightUpLeg
+    100062: Spine
+    100064: Spine1
+    400000: BigZombieRunning5
+    400002: Camera
+    400004: Faldeta
+    400006: GorillA
+    400008: //RootNode
+    400010: Head
+    400012: Head_end
+    400014: Hips
+    400016: Lamp
+    400018: LeftArm
+    400020: LeftFoot
+    400022: LeftForeArm
+    400024: LeftHand
+    400026: LeftHand_end
+    400028: LeftLeg
+    400030: LeftShoulder
+    400032: LeftToeBase
+    400034: LeftToeBase_end
+    400036: LeftUpLeg
+    400038: Neck
+    400040: Pit
+    400042: RightArm
+    400044: RightFoot
+    400046: RightForeArm
+    400048: RightHand
+    400050: RightHand_end
+    400052: RightLeg
+    400054: RightShoulder
+    400056: RightToeBase
+    400058: RightToeBase_end
+    400060: RightUpLeg
+    400062: Spine
+    400064: Spine1
+    2000000: Camera
+    2100000: 'Material #12.001'
+    2100002: 'Material #15.001'
+    2100004: 'Material #13.001'
+    2100006: 'Material #0.001'
+    2100008: 'Material #18.001'
+    2100010: 'Material #14.001'
+    2100012: 'Material #12'
+    2100014: 'Material #15'
+    2100016: 'Material #13'
+    2100018: 'Material #0'
+    2100020: 'Material #18'
+    2100022: 'Material #14'
+    2300000: Faldeta
+    2300002: Pit
+    3300000: Faldeta
+    3300002: Pit
+    4300000: GorillA
+    4300002: Pit
+    4300004: Faldeta
+    7400000: BigZombieRunning5|BigZBigPapaAttacking1.001
+    7400002: BigZombieRunning5|BigZBigPapaAttacking1.002
+    7400004: BigZombieRunning5|BigZBigPapaAttacking1.003
+    7400006: BigZombieRunning5|BigZBigPapaAttacking2.001
+    7400008: BigZombieRunning5|BigZBigPapaAttacking2.002
+    7400010: BigZombieRunning5|BigZBigPapaAttacking3.001
+    7400012: BigZombieRunning5|BigZBigPapaAttacking3.002
+    7400014: BigZombieRunning5|BigZBigPapaAttacking4.001
+    7400016: BigZombieRunning5|BigZBigPapaRunning1.001
+    7400018: BigZombieRunning5|BigZBigPapaRunning1.002
+    7400020: BigZombieRunning5|BigZBigPapaRunning1.003
+    7400022: BigZombieRunning5|BigZBigPapaRunning2.001
+    7400024: BigZombieRunning5|BigZBigPapaRunning3.001
+    7400026: BigZombieRunning5|BigZBigPapaRunning4.001
+    7400028: BigZombieRunning5|BigZBigPapaRunning5
+    7400030: BigZombieRunning5|BigZBigPapaRunning6
+    7400032: BigZombieRunning5|BigZBigZombieRunning2
+    7400034: BigZombieRunning5|BigZBigZombieRunning4
+    7400036: BigZombieRunning5|BigZBigZombieRunning5.001
+    7400038: BigZombieRunning5|BigZDance
+    7400040: BigZombieRunning5|BigZBigZombieRunning5
+    7400042: BigZombieRunning5|BigZBigPapaRunning4
+    7400044: BigZombieRunning5|BigZBigPapaAttacking4
+    7400046: BigZombieRunning5|BigZBigPapaAttacking1
+    7400048: BigZombieRunning5|BigZBigPapaAttacking2
+    7400050: BigZombieRunning5|BigZBigPapaAttacking3
+    7400052: BigZombieRunning5|BigZBigPapaRunning1
+    7400054: BigZombieRunning5|BigZBigPapaRunning2
+    7400056: BigZombieRunning5|BigZBigPapaRunning3
+    7400058: BigZombieRunning5|BigZZombieRunning3
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: GorillA
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

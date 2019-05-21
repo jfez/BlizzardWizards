@@ -1,0 +1,196 @@
+fileFormatVersion: 2
+guid: 6979b3765d1155644a57cc85b1d276da
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: BotaDch
+    100002: Cabet Final
+    100004: Camera
+    100006: ExhaustRunning1
+    100008: Head
+    100010: Head_end
+    100012: Hips
+    100014: Lamp
+    100016: LeftArm
+    100018: LeftFoot
+    100020: LeftForeArm
+    100022: LeftHand
+    100024: LeftHand_end
+    100026: LeftLeg
+    100028: LeftShoulder
+    100030: LeftToeBase
+    100032: LeftToeBase_end
+    100034: LeftUpLeg
+    100036: Neck
+    100038: Pantalons
+    100040: Pit001
+    100042: //RootNode
+    100044: RightArm
+    100046: RightFoot
+    100048: RightForeArm
+    100050: RightHand
+    100052: RightHand_end
+    100054: RightLeg
+    100056: RightShoulder
+    100058: RightToeBase
+    100060: RightToeBase_end
+    100062: RightUpLeg
+    100064: Spine
+    100066: Spine1
+    400000: BotaDch
+    400002: Cabet Final
+    400004: Camera
+    400006: ExhaustRunning1
+    400008: Head
+    400010: Head_end
+    400012: Hips
+    400014: Lamp
+    400016: LeftArm
+    400018: LeftFoot
+    400020: LeftForeArm
+    400022: LeftHand
+    400024: LeftHand_end
+    400026: LeftLeg
+    400028: LeftShoulder
+    400030: LeftToeBase
+    400032: LeftToeBase_end
+    400034: LeftUpLeg
+    400036: Neck
+    400038: Pantalons
+    400040: Pit001
+    400042: //RootNode
+    400044: RightArm
+    400046: RightFoot
+    400048: RightForeArm
+    400050: RightHand
+    400052: RightHand_end
+    400054: RightLeg
+    400056: RightShoulder
+    400058: RightToeBase
+    400060: RightToeBase_end
+    400062: RightUpLeg
+    400064: Spine
+    400066: Spine1
+    2000000: Camera
+    2100000: 'Material #27'
+    2100002: 'Material #26'
+    2100004: 'Material #21'
+    2100006: 'Material #23'
+    2100008: 'Material #28'
+    2100010: 'Material #29'
+    2100012: 'Material #25'
+    2100014: 'Material #30'
+    2100016: 'Material #24'
+    2100018: 'Material #31'
+    4300000: Cabet Final
+    4300002: Pit001
+    4300004: Pantalons
+    4300006: BotaDch
+    7400000: ExhaustRunning1|ExhaExhaustIdle1
+    7400002: ExhaustRunning1|ExhaExhaustRunning1.001
+    7400004: ExhaustRunning1|ExhaExhaustRunning1.002
+    7400006: ExhaustRunning1|ExhaExhaustRunning1.003
+    7400008: ExhaustRunning1|ExhaProba
+    7400010: ExhaustRunning1|ExhaProtaDying1.001
+    7400012: ExhaustRunning1|ExhaProtaDying1.002
+    7400014: ExhaustRunning1|ExhaProtaDying2.001
+    7400016: ExhaustRunning1|ExhaProtaDying2.002
+    7400018: ExhaustRunning1|ExhaProtaDying3.001
+    7400020: ExhaustRunning1|ExhaustRunning1
+    7400022: ExhaustRunning1|ExhaExhaustRunning1
+    7400024: ExhaustRunning1|ExhaProtaDying3
+    7400026: ExhaustRunning1|ExhaProtaDying2
+    7400028: ExhaustRunning1|ExhaProtaDying1
+    7400030: ExhaustRunning1|ExhaZombieAttacking3
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: BotaDch
+    13700002: Cabet Final
+    13700004: Pantalons
+    13700006: Pit001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
