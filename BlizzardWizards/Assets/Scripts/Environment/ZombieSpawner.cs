@@ -5,8 +5,12 @@ using UnityEngine;
 public class ZombieSpawner : MonoBehaviour
 {
     public GameObject standardZombie;
-    //public GameObject gorillaZombie;
-    //public GameObject fastZombie;
+    public GameObject gorillaZombie;
+    public GameObject fastZombie;
+
+    private float standardZombieProbability = 0.6f;
+    private float gorillaZombieProbability = 1f;
+    private float fastZombieProbability = 0.9f;
 
     private bool spawning = false;
     private float timeBetweenSpawn = 4f;
@@ -38,7 +42,22 @@ public class ZombieSpawner : MonoBehaviour
                 timer = 0f;
 
                 Transform point = spawnPoints[Random.Range(1, spawnPoints.Length)];
-                Instantiate(standardZombie, point.position, point.rotation);
+
+                float random = Random.Range(0f, 1f);
+
+                if (random <= standardZombieProbability)
+                {
+                    Instantiate(standardZombie, point.position, point.rotation);
+                }
+                else if (random <= fastZombieProbability)
+                {
+                    Instantiate(fastZombie, point.position, point.rotation);
+                }
+                else
+                {
+                    Instantiate(gorillaZombie, point.position, point.rotation);
+                }
+
                 gameManager.amountZombies++;
                 gameManager.zombiesSpawnedInRound++;
 

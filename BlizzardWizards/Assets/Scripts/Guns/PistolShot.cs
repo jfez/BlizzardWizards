@@ -8,6 +8,12 @@ public class PistolShot : MonoBehaviour
     public float timeBetweenBullets = 0.15f;
     public float range = 100f;
 
+    public int maxAmmo = 8;
+    private int currentAmmo;
+    public float reloadTime = 1f;
+    private bool isReloading = false;
+
+    public Animator animator;
 
     float timer;
     Ray shootRay;
@@ -28,20 +34,43 @@ public class PistolShot : MonoBehaviour
         beep = GetComponent<AudioSource>();
     }
 
+    void Start()
+    {
+        currentAmmo = maxAmmo;
+    }
+
+    void OnEnable()
+    {
+        isReloading = false;
+        animator.SetBool("IsReloading", false);
+    }
+
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
 
-        if (Input.GetButton("Fire1") && timer >= timeBetweenBullets)
-        {
-            Shoot();
-        }
-
         if (timer >= timeBetweenBullets * effectsDisplayTime)
         {
             DisableEffects();
         }
+
+        if (isReloading)
+        {
+            return;
+        }
+
+        if (currentAmmo <= 0)
+        {
+            StartCoroutine(Reload());
+            return;
+        }
+
+        if (Input.GetButton("Fire1") && timer >= timeBetweenBullets)
+        {
+            Shoot();
+        }
+        
     }
 
     public void DisableEffects()
@@ -54,6 +83,7 @@ public class PistolShot : MonoBehaviour
     {
         beep.Play();
         timer = 0f;
+        currentAmmo--;
         gunLight.enabled = true;
         gunLine.enabled = true;
 
@@ -76,5 +106,16 @@ public class PistolShot : MonoBehaviour
         {
             gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
         }
+    }
+
+    IEnumerator Reload()
+    {
+        isReloading = true;
+        animator.SetBool("IsReloading", true);
+        yield return new WaitForSeconds(reloadTime - .25f);
+        animator.SetBool("IsReloading", false);
+        yield return new WaitForSeconds(.25f);
+        currentAmmo = maxAmmo;
+        isReloading = false;
     }
 }
