@@ -6,6 +6,7 @@ public class EnemyFollows : MonoBehaviour
 {
     GameObject player;
 
+    [HideInInspector]
     public UnityEngine.AI.NavMeshAgent nav;
 
     private float distMin;

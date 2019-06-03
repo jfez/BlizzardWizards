@@ -12,7 +12,6 @@ public class ZombieAttack : MonoBehaviour
     ZombieHealth zombieHealth;
 
     bool playerInRange;
-    float timer;
 
     Animator anim;
 
@@ -28,23 +27,7 @@ public class ZombieAttack : MonoBehaviour
         attacking = false;
     }
 
-    private void Update()
-    {
-        timer += Time.deltaTime;
-
-        if (timer >= timeBetweenAttacks && playerInRange && zombieHealth.currentHealth > 0) {
-            Attack();
-        }
-
-        if (attacking && timer >= 0.5)
-        {
-            attacking = false;
-            anim.SetBool("Attacking", attacking);
-        }
-    }
-
-    private void Attack() {
-        timer = 0f;
+    public void Attack() {
 
         attacking = true;
         anim.SetBool("Attacking", attacking);
@@ -59,6 +42,8 @@ public class ZombieAttack : MonoBehaviour
     {
         if (other.gameObject == player) {
             playerInRange = true;
+            attacking = true;
+            anim.SetBool("Attacking", attacking);
         }
     }
 
@@ -66,6 +51,8 @@ public class ZombieAttack : MonoBehaviour
     {
         if (other.gameObject == player) {
             playerInRange = false;
+            attacking = false;
+            anim.SetBool("Attacking", attacking);
         }
     }
 }
