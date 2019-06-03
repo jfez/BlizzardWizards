@@ -226,7 +226,7 @@ MonoBehaviour:
   startingHealth: 40
   sinkSpeed: 2.5
   scoreValue: 10
-  hurt_zombie: {fileID: 0}
+  hurt_zombie: {fileID: 8095286906383130041}
   currentHealth: 0
 --- !u!114 &7858870573210102892
 MonoBehaviour:
@@ -271,21 +271,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2005651037013224614}
     m_Modifications:
-    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
-        type: 3}
-      propertyPath: m_Name
-      value: ZombieStAnim Variant
-      objectReference: {fileID: 0}
-    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2986297072851428275, guid: e73aaee008c8a0d4e81b75352edf4a7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -339,6 +324,21 @@ PrefabInstance:
     - target: {fileID: 2986297072851428275, guid: e73aaee008c8a0d4e81b75352edf4a7b,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
+        type: 3}
+      propertyPath: m_Name
+      value: ZombieStAnim Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2986297072851795923, guid: e73aaee008c8a0d4e81b75352edf4a7b,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2986297072851795935, guid: e73aaee008c8a0d4e81b75352edf4a7b,
