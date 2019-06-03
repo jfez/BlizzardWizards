@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class ZombieAttack : MonoBehaviour
 {
-    public float timeBetweenAttacks = 0.5f;
     public int attackDamage = 4;
 
     GameObject player;
@@ -28,11 +27,6 @@ public class ZombieAttack : MonoBehaviour
     }
 
     public void Attack() {
-
-        attacking = true;
-        anim.SetBool("Attacking", attacking);
-        
-
         if (playerHealth.currentHealth > 0) {
             playerHealth.TakeDamage(attackDamage);
         }

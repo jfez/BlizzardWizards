@@ -137,16 +137,16 @@ ModelImporter:
     - serializedVersion: 16
       name: BigPapaRunning5|BigPBigPapaAttacking2
       takeName: BigPapaRunning5|BigPBigPapaAttacking2
-      firstFrame: 0
-      lastFrame: 219
+      firstFrame: 65
+      lastFrame: 172
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -157,7 +157,14 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.6163769
+        functionName: Attack
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}
@@ -173,8 +180,8 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 0
-      loopBlend: 0
+      loopTime: 1
+      loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
@@ -193,8 +200,8 @@ ModelImporter:
     - serializedVersion: 16
       name: BigPapaRunning5|BigPZombieDying2
       takeName: BigPapaRunning5|BigPZombieDying2
-      firstFrame: 0
-      lastFrame: 250
+      firstFrame: 70
+      lastFrame: 175
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

@@ -1,5 +1,35 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1620370353099901088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7674609858020735895}
+  m_Layer: 0
+  m_Name: Particle Systems Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7674609858020735895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1620370353099901088}
+  m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.03, y: 0.91, z: 3.4}
+  m_LocalScale: {x: 0.025, y: 0.025, z: 0.025}
+  m_Children: []
+  m_Father: {fileID: 6759681264608961766}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &6759681264608961767
 GameObject:
   m_ObjectHideFlags: 0
@@ -12,11 +42,10 @@ GameObject:
   - component: {fileID: 3520841224735747023}
   - component: {fileID: 5475960810166134116}
   - component: {fileID: 6463265400014052297}
-  - component: {fileID: 1081581656772496072}
   - component: {fileID: 537975244715467222}
   - component: {fileID: 7225900516257619702}
   - component: {fileID: 1170888324252393978}
-  - component: {fileID: 8563942680921207613}
+  - component: {fileID: 1655161120998186050}
   - component: {fileID: 8352486399051884822}
   m_Layer: 11
   m_Name: Prefab Zombie Gorilla
@@ -36,6 +65,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 7674609858020735895}
   - {fileID: 6759681265178238971}
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -171,19 +201,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!135 &1081581656772496072
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6759681264608961767}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 7
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!136 &537975244715467222
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -228,7 +245,7 @@ MonoBehaviour:
   scoreValue: 10
   hurt_zombie: {fileID: 5475960810166134116}
   currentHealth: 0
---- !u!114 &8563942680921207613
+--- !u!114 &1655161120998186050
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -237,11 +254,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 6759681264608961767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7aec485516dbfb042a6208951834c2f5, type: 3}
+  m_Script: {fileID: 11500000, guid: 95b9cb87a8f351d4087f632173e4a79b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeBetweenAttacks: 0.5
-  attackDamage: 4
+  explosionPrefab: {fileID: 7364013315193362859, guid: 73abaf77169f6ae429dd479a7e9e62da,
+    type: 3}
+  particleSystemPoint: {fileID: 7674609858020735895}
+  explosionAudio: {fileID: 5475960810166134116}
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  zombieMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  maxDamage: 20
+  explosionForce: 50
+  explosionRadius: 20
 --- !u!195 &8352486399051884822
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -264,6 +292,19 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+--- !u!135 &4678099748714730580
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6759681265177740187}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 200
+  m_Center: {x: 4.2, y: 39.2, z: 41.53}
 --- !u!1001 &6759681265177838913
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -277,35 +318,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.08
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.945
+      value: -0.07
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.045
+      value: -0.23
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: -0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -313,7 +354,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -90
       objectReference: {fileID: 0}
     - target: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -334,6 +375,12 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 9500000, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2771a80e5b12dc7439d90cc642f63287, type: 3}
+--- !u!1 &6759681265177740187 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100058, guid: 2771a80e5b12dc7439d90cc642f63287,
+    type: 3}
+  m_PrefabInstance: {fileID: 6759681265177838913}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6759681265178238971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400058, guid: 2771a80e5b12dc7439d90cc642f63287,

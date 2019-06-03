@@ -5,6 +5,8 @@ using UnityEngine;
 public class ZombieSpawner : MonoBehaviour
 {
     public GameObject standardZombie;
+    //public GameObject gorillaZombie;
+    //public GameObject fastZombie;
 
     private bool spawning = false;
     private float timeBetweenSpawn = 4f;
