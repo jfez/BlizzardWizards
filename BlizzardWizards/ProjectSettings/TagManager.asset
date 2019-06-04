@@ -9,6 +9,7 @@ TagManager:
   - Crate
   - Zombie
   - Surface
+  - Particles
   layers:
   - Default
   - TransparentFX

@@ -12,6 +12,8 @@ public class MachinegunShot : MonoBehaviour
     public float timeBetweenBurst = 5f;
     public float timeBetweenBurstBullets = 0.5f;
 
+    public AudioSource relaoding;
+
     public int maxAmmo = 8;
     private int currentAmmo;
     public float reloadTime = 1f;
@@ -93,6 +95,7 @@ public class MachinegunShot : MonoBehaviour
 
     IEnumerator Reload()
     {
+        relaoding.Play();
         isReloading = true;
         animator.SetBool("IsReloading", true);
         yield return new WaitForSeconds(reloadTime - .25f);

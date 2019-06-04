@@ -12,6 +12,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider shieldSlider;
     public Image damageImage;
     public AudioSource hurt_pj;
+    public AudioSource dead_pj;
 
     public GameObject pistol;
     public GameObject machineGun;
@@ -107,6 +108,7 @@ public class PlayerHealth : MonoBehaviour
 
     private void Death()
     {
+        dead_pj.Play();
         isDead = true;
         anim.SetTrigger("death");
 
@@ -120,7 +122,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void RestartLevel()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("Play");
     }
 
 }

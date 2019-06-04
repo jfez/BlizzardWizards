@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ZombieHealth : MonoBehaviour
 {
+    private GameObject damagePrefab;
     public int startingHealth = 40;
     public float sinkSpeed = 2.5f;
     public int scoreValue = 10;
@@ -21,6 +22,8 @@ public class ZombieHealth : MonoBehaviour
 
     GameManager gameManager;
 
+    private ParticleSystem damageParticles;
+
     private void Awake()
     {
         currentHealth = startingHealth;
@@ -29,6 +32,11 @@ public class ZombieHealth : MonoBehaviour
 
         anim = GetComponent<Animator>();
         gameManager = GameManager.instance;
+
+        damagePrefab = GameObject.FindGameObjectWithTag("Particles");
+
+        damageParticles = Instantiate(damagePrefab).GetComponentInChildren<ParticleSystem>();
+        
     }
 
     // Update is called once per frame
@@ -43,6 +51,10 @@ public class ZombieHealth : MonoBehaviour
         if (isDead) {
             return;
         }
+
+        damageParticles.transform.position = transform.position;
+
+        damageParticles.Play();
 
         currentHealth -= amount;
         hurt_zombie.Play();

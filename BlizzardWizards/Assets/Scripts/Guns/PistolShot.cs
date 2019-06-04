@@ -13,6 +13,8 @@ public class PistolShot : MonoBehaviour
     public float reloadTime = 1f;
     private bool isReloading = false;
 
+    public AudioSource reloading;
+
     public Animator animator;
 
     float timer;
@@ -110,6 +112,7 @@ public class PistolShot : MonoBehaviour
 
     IEnumerator Reload()
     {
+        reloading.Play();
         isReloading = true;
         animator.SetBool("IsReloading", true);
         yield return new WaitForSeconds(reloadTime - .25f);

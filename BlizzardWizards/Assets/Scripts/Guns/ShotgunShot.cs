@@ -9,6 +9,8 @@ public class ShotgunShot : MonoBehaviour
     public int numPellets = 10;
     public float timeBetweenShots = 0.5f;
 
+    public AudioSource reloading;
+
     public int maxAmmo = 8;
     private int currentAmmo;
     public float reloadTime = 1f;
@@ -64,6 +66,7 @@ public class ShotgunShot : MonoBehaviour
 
     IEnumerator Reload()
     {
+        reloading.Play();
         isReloading = true;
         animator.SetBool("IsReloading", true);
         yield return new WaitForSeconds(reloadTime - .25f);

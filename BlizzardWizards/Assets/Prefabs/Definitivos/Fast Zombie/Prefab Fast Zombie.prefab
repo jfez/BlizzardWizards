@@ -80,7 +80,8 @@ AudioSource:
   m_GameObject: {fileID: 1081014320003553816}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 3af8905fc61dde845a08c8cce370ec3c,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 6dc6b3d2813c59f4ebccc27725bd2da9, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -239,7 +240,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7aec485516dbfb042a6208951834c2f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackDamage: 8
+  attackDamage: 15
 --- !u!195 &1081014320003553819
 NavMeshAgent:
   m_ObjectHideFlags: 0
