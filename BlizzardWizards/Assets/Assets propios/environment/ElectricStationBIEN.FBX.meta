@@ -147,33 +147,6 @@ ModelImporter:
     4300048: ElectricConverter.004
     4300050: ElectricCylinder.006
     4300052: Cylinder001
-    6400000: Cylinder001
-    6400002: ElectricConverter.003
-    6400004: ElectricConverter.004
-    6400006: ElectricCylinder.002
-    6400008: ElectricCylinder.005
-    6400010: ElectricCylinder.006
-    6400012: ElectricHut
-    6400014: ElectricTower
-    6400016: ElectricTower.001
-    6400018: ElectricTower.002
-    6400020: ElectricTransformer
-    6400022: NurbsPath.000
-    6400024: NurbsPath.001
-    6400026: NurbsPath.002
-    6400028: NurbsPath.003
-    6400030: NurbsPath.004
-    6400032: NurbsPath.005
-    6400034: NurbsPath.006
-    6400036: NurbsPath.007
-    6400038: NurbsPath.008
-    6400040: NurbsPath.009
-    6400042: NurbsPath.010
-    6400044: NurbsPath.011
-    6400046: NurbsPath.012
-    6400048: NurbsPath.013
-    6400050: NurbsPath.014
-    6400052: NurbsPath.015
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -207,14 +180,14 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     useSRGBMaterialColor: 1
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     optimizeMeshForGPU: 1
     keepQuads: 0
