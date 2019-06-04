@@ -5,10 +5,11 @@ using UnityEngine.UI;
 
 public class HealMachine : MonoBehaviour
 {
-    public Text machineText;
+    public Image machineText;
 
     GameObject player;
     PlayerHealth playerHealth;
+    public AudioSource deny;
 
     private bool inMachine;
     private AudioSource drink;
@@ -27,12 +28,17 @@ public class HealMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && playerHealth.currentHealth < 100)
+        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && playerHealth.currentHealth < 100 && GameManager.instance.powerOn)
         {
             playerHealth.currentHealth = 100;
             ScoreManager.score -= 50;
             drink.Play();
 
+        }
+
+        else if ((Input.GetKeyDown(KeyCode.Return) && inMachine &&  playerHealth.currentHealth < 100) && (ScoreManager.score < 50 || !GameManager.instance.powerOn))
+        {
+            deny.Play();
         }
     }
 

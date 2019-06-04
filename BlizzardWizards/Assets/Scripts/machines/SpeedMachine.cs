@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class SpeedMachine : MonoBehaviour
 {
-    public Text machineText;
+    public Image machineText;
+    public AudioSource deny;
 
     GameObject player;
     PlayerMovement playerMovement;
@@ -35,7 +36,7 @@ public class SpeedMachine : MonoBehaviour
         timer += Time.deltaTime;
         //print(timer);
 
-        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && !playerMovement.speedPerk)
+        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && !playerMovement.speedPerk && GameManager.instance.powerOn)
         {
             playerMovement.speedPerk = true;
             timer = 0;
@@ -43,6 +44,11 @@ public class SpeedMachine : MonoBehaviour
             drink.Play();
             //print(playerMovement.speedPerk);
 
+        }
+
+        else if ((Input.GetKeyDown(KeyCode.Return) && inMachine &&  !playerMovement.speedPerk) && (ScoreManager.score < 50 || !GameManager.instance.powerOn))
+        {
+            deny.Play();
         }
 
         if (timer > maxTimePerk)

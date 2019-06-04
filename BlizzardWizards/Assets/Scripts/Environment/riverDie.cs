@@ -27,7 +27,11 @@ public class riverDie : MonoBehaviour
         if (other.gameObject == player)
         {
             player.transform.position = newPosition.position;
-            playerHealth.TakeDamage(70);
+            if(gameObject.tag != "Volcano")
+            {
+                playerHealth.TakeDamage(70);
+            }
+            
         }
     }
 }

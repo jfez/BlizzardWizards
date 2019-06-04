@@ -6,15 +6,15 @@ public class ShotgunShot : MonoBehaviour
 {
     public GameObject pelletPrefab;
 
-    public int numPellets = 10;
-    public float timeBetweenShots = 0.5f;
+    public int numPellets;
+    public float timeBetweenShots;
 
     public AudioSource reloading;
 
-    public int maxAmmo = 8;
+    public int maxAmmo;
     private int currentAmmo;
-    public float reloadTime = 1f;
-    private bool isReloading = false;
+    public float reloadTime;
+    private bool isReloading;
 
     public Animator animator;
 
@@ -24,7 +24,14 @@ public class ShotgunShot : MonoBehaviour
     void Awake()
     {
         zasca = GetComponent<AudioSource>();
-    }
+
+        numPellets = 10;
+        timeBetweenShots = 0.5f;
+        maxAmmo = 4;
+
+        reloadTime = 1.5f;
+        isReloading = false;
+}
 
     void Start()
     {
@@ -53,7 +60,16 @@ public class ShotgunShot : MonoBehaviour
             return;
         }
 
-        if (Input.GetButton("Fire1") && timer >= timeBetweenShots) {
+        else if (currentAmmo < maxAmmo)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+                return;
+            }
+        }
+
+        if (Input.GetButton("Fire1") && timer >= timeBetweenShots && !GameManager.instance.pause) {
             timer = 0f;
             currentAmmo--;
             zasca.Play();

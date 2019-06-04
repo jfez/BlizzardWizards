@@ -5,7 +5,8 @@ using UnityEngine.UI;
 
 public class ShieldMachine : MonoBehaviour
 {
-    public Text machineText;
+    public Image machineText;
+    public AudioSource deny;
 
     GameObject player;
     PlayerHealth playerHealth;
@@ -27,12 +28,17 @@ public class ShieldMachine : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && playerHealth.currentShield < 100)
+        if (Input.GetKeyDown(KeyCode.Return) && inMachine && ScoreManager.score >= 50 && playerHealth.currentShield < 100 && GameManager.instance.powerOn)
         {
             playerHealth.currentShield = 100;
             ScoreManager.score -= 50;
             drink.Play();
 
+        }
+
+        else if ((Input.GetKeyDown(KeyCode.Return) && inMachine && playerHealth.currentShield < 100) && (ScoreManager.score < 50 ||  !GameManager.instance.powerOn))
+        {
+            deny.Play();
         }
     }
 

@@ -9,10 +9,12 @@ public class openDoor : MonoBehaviour
     public GameObject vanishPrefab;
     public Transform vanishParticleSystemPoint;
 
-    public Text buyText;
+    public Image buyText;
 
     public AudioSource open;
+    public AudioSource deny;
     public GameObject mesh;
+    
     
 
     //public GameObject surfaceObject;
@@ -30,7 +32,7 @@ public class openDoor : MonoBehaviour
 
         vanishParticles = Instantiate(vanishPrefab).GetComponent<ParticleSystem>();
 
-        open = GetComponentInParent<AudioSource>();
+        //open = GetComponentInParent<AudioSource>();
 
         //surfaceObject = GameObject.FindWithTag("Surface");
         //surface = surfaceObject.GetComponentInChildren<NavMeshSurface>();
@@ -42,6 +44,8 @@ public class openDoor : MonoBehaviour
         if (inside && Input.GetKeyDown(KeyCode.Return) && ScoreManager.score >= 100)
         {
             open.Play();
+            
+            //print(open);
 
             gameObject.SetActive(false);
             if (mesh != null)
@@ -63,6 +67,11 @@ public class openDoor : MonoBehaviour
             //surface.BuildNavMesh();
             //surfaceObject.SetActive(true);
 
+        }
+
+        else if (inside && Input.GetKeyDown(KeyCode.Return) && ScoreManager.score < 100)
+        {
+            deny.Play();
         }
     }
 

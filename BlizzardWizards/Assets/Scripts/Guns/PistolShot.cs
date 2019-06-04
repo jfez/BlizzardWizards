@@ -4,14 +4,15 @@ using UnityEngine;
 
 public class PistolShot : MonoBehaviour
 {
-    public int damagePerShot = 20;
-    public float timeBetweenBullets = 0.15f;
-    public float range = 100f;
+    public int damagePerShot;
+    public float timeBetweenBullets;
+    public float range;
 
-    public int maxAmmo = 8;
+    public int maxAmmo;
     private int currentAmmo;
-    public float reloadTime = 1f;
-    private bool isReloading = false;
+    public float reloadTimef;
+    private bool isReloading;
+    private float reloadTime;
 
     public AudioSource reloading;
 
@@ -34,7 +35,16 @@ public class PistolShot : MonoBehaviour
         gunLight = GetComponent<Light>();
 
         beep = GetComponent<AudioSource>();
-    }
+
+        damagePerShot = 20;
+        timeBetweenBullets = 0.15f;
+        range = 100f;
+
+        maxAmmo = 8;
+    
+        reloadTime = 1f;
+        isReloading = false;
+}
 
     void Start()
     {
@@ -68,7 +78,16 @@ public class PistolShot : MonoBehaviour
             return;
         }
 
-        if (Input.GetButton("Fire1") && timer >= timeBetweenBullets)
+        else if (currentAmmo < maxAmmo)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+                return;
+            }
+        }
+
+        if (Input.GetButton("Fire1") && timer >= timeBetweenBullets && !GameManager.instance.pause)
         {
             Shoot();
         }

@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public Transform teleportParticleSystemPoint;
     public float teleportDistance = 3f;
     public float floorOverlapSphereRadius = 0.2f;
+    [SerializeField] GameObject msgPanel;
 
     private bool isGrounded;
     private bool jump;
@@ -56,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         dashTime = dashLimit;
         flashLimit = 3;
         flashTime = flashLimit;
-        dashForce = 200;
+        dashForce = 800;
         isMoving = false;
         isRunning = false;
         speedPerk = false;
@@ -124,10 +125,10 @@ public class PlayerMovement : MonoBehaviour
 
         anim.SetBool("running", isRunning);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        /*if (Input.GetButtonDown("Jump") && isGrounded)
         {
             jump = true;
-        }
+        }*/
 
 
         if (!speedPerk)
@@ -177,13 +178,29 @@ public class PlayerMovement : MonoBehaviour
         }
         
 
-        if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit)
+        if (Input.GetMouseButtonDown(1) && dashTime >= dashLimit && !GameManager.instance.pause)
         {
             playerRigidbody.AddForce(transform.forward*dashForce);
             dashTime = 0;
         }
 
-        if (Input.GetMouseButtonDown(2) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            GameManager.instance.pause = !GameManager.instance.pause;
+        }
+
+        if (GameManager.instance.pause)
+        {
+            msgPanel.SetActive(true);
+            Time.timeScale = 0;
+        }
+
+        else if (!GameManager.instance.pause)
+        {
+            msgPanel.SetActive(false);
+            Time.timeScale = 1;
+        }
+
+        /*if (Input.GetMouseButtonDown(2) && flashTime >= flashLimit && (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)))
         {
             Vector3 displacement = Vector3.zero;
 
@@ -216,7 +233,7 @@ public class PlayerMovement : MonoBehaviour
             transform.position = transform.position + displacement;
 
             flashTime = 0;
-        }
+        }*/
     }
 
     void OnCollisionEnter(Collision collision)

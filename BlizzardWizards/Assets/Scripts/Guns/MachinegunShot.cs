@@ -14,9 +14,9 @@ public class MachinegunShot : MonoBehaviour
 
     public AudioSource relaoding;
 
-    public int maxAmmo = 8;
+    public int maxAmmo = 12;
     private int currentAmmo;
-    public float reloadTime = 1f;
+    public float reloadTime = 0.8f;
     private bool isReloading = false;
 
     public Animator animator;
@@ -28,7 +28,16 @@ public class MachinegunShot : MonoBehaviour
     void Awake()
     {
         pium = GetComponent<AudioSource>();
-    }
+
+        damagePerShot = 20;
+        timeBetweenBullets = 0.15f;
+
+        timeBetweenBurst = 5f;
+        timeBetweenBurstBullets = 0.5f;
+        maxAmmo = 12;
+        reloadTime = 0.8f;
+        isReloading = false;
+}
 
     void Start()
     {
@@ -63,7 +72,16 @@ public class MachinegunShot : MonoBehaviour
             return;
         }
 
-        if (Input.GetButton("Fire1"))
+        else if (currentAmmo < maxAmmo)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                StartCoroutine(Reload());
+                return;
+            }
+        }
+
+        if (Input.GetButton("Fire1") && !GameManager.instance.pause)
         {
             if (burst && timer >= timeBetweenBurst)
             {

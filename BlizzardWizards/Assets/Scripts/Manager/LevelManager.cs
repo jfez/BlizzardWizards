@@ -26,4 +26,9 @@ public class LevelManager : MonoBehaviour
     {
         Application.Quit();
     }
+
+    public void BackGame()
+    {
+        GameManager.instance.pause = false;
+    }
 }

@@ -24,6 +24,8 @@ public class GameManager : MonoBehaviour
     public int zombiesPerRound = 10;
     public int zombiesSpawnedInRound = 0;
     public int zombiesDeadInRound = 0;
+    public bool powerOn;
+    public bool pause;
 
     private float delayRound = 2f;
     private float delaySpawn = 2f;
@@ -33,6 +35,8 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         changeRound = GetComponent<AudioSource>();
+        powerOn = false;
+        pause = false;
     }
 
     public void newRound() {

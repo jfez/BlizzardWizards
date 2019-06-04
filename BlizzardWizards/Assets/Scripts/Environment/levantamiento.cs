@@ -9,7 +9,8 @@ public class levantamiento : MonoBehaviour
     public GameObject PuenteIzquierda;
     public GameObject colliderPuente;
     public int speed;
-    public Text buyText;
+    public Image buyText;
+    public AudioSource deny;
 
     bool dentro;
     bool rotar;
@@ -28,7 +29,7 @@ public class levantamiento : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((Input.GetKeyDown("return") && dentro && ScoreManager.score >= 0 || rotar)  && PuenteDerecha.transform.rotation.z < 0)
+        if ((Input.GetKeyDown("return") && dentro && ScoreManager.score >= 100 || rotar)  && PuenteDerecha.transform.rotation.z < 0)
         {
             PuenteDerecha.transform.Rotate(Vector3.forward * speed * Time.deltaTime);
             PuenteIzquierda.transform.Rotate(Vector3.forward * speed * Time.deltaTime);
@@ -42,6 +43,11 @@ public class levantamiento : MonoBehaviour
                 open.Play();
                 buyText.gameObject.SetActive(false);
             }
+        }
+
+        else if(Input.GetKeyDown("return") && dentro && ScoreManager.score < 100 && !rotar)
+        {
+            deny.Play();
         }
     }
 
