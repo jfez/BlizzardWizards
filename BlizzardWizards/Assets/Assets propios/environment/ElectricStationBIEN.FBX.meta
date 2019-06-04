@@ -1,0 +1,235 @@
+fileFormatVersion: 2
+guid: a4f5d47bdd768fc40a6834890b88bf20
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Cylinder001
+    100002: ElectricConverter.003
+    100004: ElectricConverter.004
+    100006: ElectricCylinder.002
+    100008: ElectricCylinder.005
+    100010: ElectricCylinder.006
+    100012: ElectricHut
+    100014: //RootNode
+    100016: ElectricTower
+    100018: ElectricTower.001
+    100020: ElectricTower.002
+    100022: ElectricTransformer
+    100024: NurbsPath.000
+    100026: NurbsPath.001
+    100028: NurbsPath.002
+    100030: NurbsPath.003
+    100032: NurbsPath.004
+    100034: NurbsPath.005
+    100036: NurbsPath.006
+    100038: NurbsPath.007
+    100040: NurbsPath.008
+    100042: NurbsPath.009
+    100044: NurbsPath.010
+    100046: NurbsPath.011
+    100048: NurbsPath.012
+    100050: NurbsPath.013
+    100052: NurbsPath.014
+    100054: NurbsPath.015
+    400000: Cylinder001
+    400002: ElectricConverter.003
+    400004: ElectricConverter.004
+    400006: ElectricCylinder.002
+    400008: ElectricCylinder.005
+    400010: ElectricCylinder.006
+    400012: ElectricHut
+    400014: //RootNode
+    400016: ElectricTower
+    400018: ElectricTower.001
+    400020: ElectricTower.002
+    400022: ElectricTransformer
+    400024: NurbsPath.000
+    400026: NurbsPath.001
+    400028: NurbsPath.002
+    400030: NurbsPath.003
+    400032: NurbsPath.004
+    400034: NurbsPath.005
+    400036: NurbsPath.006
+    400038: NurbsPath.007
+    400040: NurbsPath.008
+    400042: NurbsPath.009
+    400044: NurbsPath.010
+    400046: NurbsPath.011
+    400048: NurbsPath.012
+    400050: NurbsPath.013
+    400052: NurbsPath.014
+    400054: NurbsPath.015
+    2100000: Metal.002
+    2100002: 'Material #58'
+    2100004: 'Material #57'
+    2100006: 'Material #85'
+    2100008: 'Material #70'
+    2100010: 'Material #55'
+    2100012: 'Material #54'
+    2300000: Cylinder001
+    2300002: ElectricConverter.003
+    2300004: ElectricConverter.004
+    2300006: ElectricCylinder.002
+    2300008: ElectricCylinder.005
+    2300010: ElectricCylinder.006
+    2300012: ElectricHut
+    2300014: ElectricTower
+    2300016: ElectricTower.001
+    2300018: ElectricTower.002
+    2300020: ElectricTransformer
+    2300022: NurbsPath.000
+    2300024: NurbsPath.001
+    2300026: NurbsPath.002
+    2300028: NurbsPath.003
+    2300030: NurbsPath.004
+    2300032: NurbsPath.005
+    2300034: NurbsPath.006
+    2300036: NurbsPath.007
+    2300038: NurbsPath.008
+    2300040: NurbsPath.009
+    2300042: NurbsPath.010
+    2300044: NurbsPath.011
+    2300046: NurbsPath.012
+    2300048: NurbsPath.013
+    2300050: NurbsPath.014
+    2300052: NurbsPath.015
+    3300000: Cylinder001
+    3300002: ElectricConverter.003
+    3300004: ElectricConverter.004
+    3300006: ElectricCylinder.002
+    3300008: ElectricCylinder.005
+    3300010: ElectricCylinder.006
+    3300012: ElectricHut
+    3300014: ElectricTower
+    3300016: ElectricTower.001
+    3300018: ElectricTower.002
+    3300020: ElectricTransformer
+    3300022: NurbsPath.000
+    3300024: NurbsPath.001
+    3300026: NurbsPath.002
+    3300028: NurbsPath.003
+    3300030: NurbsPath.004
+    3300032: NurbsPath.005
+    3300034: NurbsPath.006
+    3300036: NurbsPath.007
+    3300038: NurbsPath.008
+    3300040: NurbsPath.009
+    3300042: NurbsPath.010
+    3300044: NurbsPath.011
+    3300046: NurbsPath.012
+    3300048: NurbsPath.013
+    3300050: NurbsPath.014
+    3300052: NurbsPath.015
+    4300000: NurbsPath.011
+    4300002: NurbsPath.003
+    4300004: NurbsPath.002
+    4300006: NurbsPath.001
+    4300008: NurbsPath.000
+    4300010: NurbsPath.007
+    4300012: NurbsPath.008
+    4300014: NurbsPath.009
+    4300016: ElectricHut
+    4300018: ElectricTower
+    4300020: NurbsPath.012
+    4300022: NurbsPath.005
+    4300024: NurbsPath.006
+    4300026: ElectricTower.001
+    4300028: NurbsPath.004
+    4300030: NurbsPath.013
+    4300032: NurbsPath.015
+    4300034: ElectricTower.002
+    4300036: NurbsPath.014
+    4300038: ElectricTransformer
+    4300040: ElectricCylinder.002
+    4300042: NurbsPath.010
+    4300044: ElectricConverter.003
+    4300046: ElectricCylinder.005
+    4300048: ElectricConverter.004
+    4300050: ElectricCylinder.006
+    4300052: Cylinder001
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 0
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
